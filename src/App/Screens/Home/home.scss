@@ -1,0 +1,76 @@
+@import '../../constants/colors.scss';
+
+.home-wrapper {
+  .home-title-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 14vh;
+    left: 9vw;
+    margin: auto;
+    z-index: 10;
+
+    .home-title-content {
+      .home-title {
+        margin-bottom: -0.5rem;
+        font-size: 7em !important;
+        color: $fourth;
+      }
+
+      .home-subtitle {
+        width: 30vw;
+        color: $tertiary;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .home-bubble-wrapper {
+    .home-bubble,
+    .home-bubble-arm,
+    .home-bubble-round {
+      position: absolute;
+      z-index: 0;
+    }
+
+    .home-bubble {
+      width: 70%;
+      top: 0;
+      left: 34%;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .home-title-wrapper {
+      top: 22vh;
+      left: 5vw;
+      .home-title-content {
+        .home-title {
+          font-size: 4em !important;
+        }
+        .home-subtitle {
+          width: 80vw;
+        }
+      }
+    }
+
+    .home-bubble-wrapper {
+      .home-bubble,
+      .home-bubble-arm,
+      .home-bubble-round {
+        position: absolute;
+        z-index: 0;
+      }
+
+      .home-bubble {
+        width: 75%;
+        top: 6%;
+        left: 10%;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../constants/colors.scss';
+
+.classic-btn {
+  font-size: 1.2rem;
+  line-height: 35px;
+  background-color: $fourth;
+  color: #00b1da;
+  background: linear-gradient(259.07deg, #daf8ff 4.07%, #b2eaf8 100%);
+  box-shadow: 0px 8px 20px #e5f4f5;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 0.25em 3em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  transition: all linear 0.3s;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $fourth;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+  &:hover {
+    text-decoration: none;
+    transition-duration: 0.1s;
+    box-shadow: 0px 8px 20px #daeff1;
+  }
+}

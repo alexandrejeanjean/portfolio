@@ -1,0 +1,87 @@
+@import '../../constants/colors.scss';
+
+.about-bubble {
+  position: fixed;
+  top: 2%;
+  left: 15%;
+  right: 0;
+  margin: auto;
+  width: 140%;
+  z-index: -1;
+  animation-name: onLoad;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.about-wrapper {
+  width: 100%;
+  height: 100%;
+  padding-top: 2%;
+  .about-profile-picture {
+    width: 350px;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    z-index: 1;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    filter: opacity(0.6);
+    animation-name: onLoad;
+    animation-duration: 1.2s;
+    &:hover {
+      filter: opacity(1);
+      transform: translateY(2px);
+    }
+  }
+  .about-presentation-wrapper {
+    margin: auto;
+    width: 65vw;
+    height: 65vh;
+    display: flex;
+
+    .about-title-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-presentation-text {
+      max-width: 560px;
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 10px;
+        .underlined {
+          font: inherit;
+          color: inherit;
+          position: relative;
+        }
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    .about-profile-picture {
+      display: none;
+    }
+    .about-presentation-wrapper {
+      width: 85vw;
+      height: 120%;
+      .about-presentation-text {
+        max-width: 450px;
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 10px;
+          .underlined {
+            font: inherit;
+            color: inherit;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

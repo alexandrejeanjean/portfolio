@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 5vw;
+  z-index: 10;
+  .author-name {
+    font-family: 'NeutraTextBook', 'Arial';
+    font-size: 0.6em;
+  }
+
+  .contact {
+    width: 40px;
+    animation-name: gelatine;
+    animation-delay: 0.4s;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 85vw;
+    height: 20px;
+  }
+}
+
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

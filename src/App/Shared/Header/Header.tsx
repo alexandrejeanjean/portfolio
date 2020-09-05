@@ -7,7 +7,7 @@ const Header = () => (
     <Link className='author-name' to='/'>
       alexandre jeanjean
     </Link>
-    <a href='mailto:jeanjeanalexandre@gmail.com'>
+    <a href='mailto:jeanjeanalexandre@gmail.com' title='contactez-moi'>
       <img className='contact' src={mail} alt='' />
     </a>
   </header>

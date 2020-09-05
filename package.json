@@ -56,5 +56,5 @@
     "git-precommit-checks": "^3.0.5",
     "husky": "^4.2.5",
     "prettier": "^2.0.5"
-  },
+  }
 }

@@ -6,7 +6,7 @@ interface Project {
   description: string
 }
 
-const ProjectsDatas: Array<Project> = [
+const ProjectsDatas: Project[] = [
   {
     title: 'Dipongo',
     picture: 'dipongo',

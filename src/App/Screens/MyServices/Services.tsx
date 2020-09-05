@@ -24,8 +24,8 @@ const Services = () => {
           </p>
           <ClassicButton text='Visiter les projets' endpoint='/projets' />
           <div className='skills-wrapper'>
-            {ServicesDatas.map((item, i) => (
-              <div className='skill-wrapper'>
+            {ServicesDatas.map((item) => (
+              <div className='skill-wrapper' key={item.img}>
                 <div className='skill-cube'>
                   <img src={item.img} alt='' title='' />
                 </div>

@@ -57,6 +57,7 @@ a {
 
 body,
 a,
+button,
 .classic-btn {
   cursor: none;
 }
@@ -66,10 +67,9 @@ a,
     height: 100vh;
   }
 
-  body,
   a,
   .classic-btn {
-    cursor: initial;
+    cursor: pointer;
   }
 }
 

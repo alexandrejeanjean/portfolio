@@ -148,7 +148,8 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
       color: $main;
       &:hover::before {
         max-width: 70%;
-        content: attr(data-description);
+        content: attr(data-description) + attr(data-description2) +
+          attr(data-description3);
         white-space: pre-wrap;
         line-height: 30px;
         position: absolute;
@@ -161,6 +162,7 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
         animation-fill-mode: forwards;
         animation-duration: 1s;
       }
+
       &::after {
         content: '';
         width: 100%;
@@ -185,7 +187,8 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
       color: $main;
       &:hover::before {
         max-width: 70%;
-        content: attr(data-description);
+        content: attr(data-description) + attr(data-description2) +
+          attr(data-description3);
         line-height: 30px;
         position: absolute;
         top: 30%;

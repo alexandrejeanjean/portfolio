@@ -58,7 +58,9 @@ const Projects = () => {
           {ProjectsDatas.map((item, i) => (
             <div
               className={cardStyle(i, false, false, item.picture)}
-              data-description={item.description}
+              data-description={item.description[0]}
+              data-description2={item.description[1]}
+              data-description3={item.description[2]}
               key={item.title}
             >
               <div className={cardStyle(i, true, false, item.picture)}>

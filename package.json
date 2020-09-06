@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
@@ -54,15 +53,32 @@
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-prettier": "^3.1.4",
     "git-format-staged": "^2.1.0",
-    "git-precommit-checks": "^3.0.5",
+    "git-precommit-checks": "^3.0.6",
     "husky": "^4.2.5",
-    "jest": "^26.4.2",
     "prettier": "^2.0.5"
   },
   "husky": {
     "hooks": {
-      "msg": "Commit name",
-      "pre-commit": "git-format-staged -f prettier-standard 'src/*.ts' 'src/*.tsx' 'src/*.js'"
+      "pre-commit": "git-precommit-checks"
     }
+  },
+  "git-precommit-checks": {
+    "rules": [
+      {
+        "filter": "\\.js$",
+        "nonBlocking": "true",
+        "message": "You’ve got leftover `console.log`",
+        "regex": "console\\.log"
+      },
+      {
+        "message": "You’ve got leftover conflict markers",
+        "regex": "/^[<>|=]{4,}/m"
+      },
+      {
+        "message": "You have unfinished devs",
+        "nonBlocking": "true",
+        "regex": "(?:FIXME|TODO)"
+      }
+    ]
   }
 }

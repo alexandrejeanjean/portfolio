@@ -11,7 +11,7 @@ const Services = () => {
       <img src={BubbleT} className='services-bubble' alt='' />
       <main className='page'>
         <section className='services-wrapper'>
-          <h1 className='services-title'>Mes services.</h1>
+          <h1 className='services-title'>Mes compétences.</h1>
           <p className='services-subtitle'>
             J'ai à coeur d'architecturer, et d'intégrer les différents
             composants d'une application avec soin.

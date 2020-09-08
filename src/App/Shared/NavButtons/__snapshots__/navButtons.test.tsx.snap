@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavButtons should render nav buttons correctly 1`] = `
+<div
+  className="nav-link-wrapper"
+>
+  <Link
+    className="nav-button-link bottom bottom-focused"
+    to="/a-propos"
+  >
+    Faisons connaissance
+  </Link>
+  <span
+    className="nav-decoration-line deco-bottom"
+  />
+</div>
+`;

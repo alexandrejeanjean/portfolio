@@ -1,0 +1,587 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Services view should be possible to click button to access next page 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Services>
+      <img
+        alt=""
+        className="services-bubble"
+        src={[Function]}
+      />
+      <main
+        className="page"
+      >
+        <section
+          className="services-wrapper"
+        >
+          <h1
+            className="services-title"
+          >
+            Mes compétences.
+          </h1>
+          <p
+            className="services-subtitle"
+          >
+            J'ai à coeur d'architecturer, et d'intégrer les différents composants d'une application avec soin.
+          </p>
+          <p
+            className="services-subtitle"
+          >
+            Je prends le temps de respecter les guidelines des UI/UX Designers.
+          </p>
+          <p
+            className="services-subtitle"
+          >
+            Délivrer une application maintenable, dev-friendly est mon objectif.
+          </p>
+          <ClassicButton
+            endpoint="/projets"
+            text="Visiter les projets"
+          >
+            <Link
+              className="classic-btn"
+              to="/projets"
+            >
+              <LinkAnchor
+                className="classic-btn"
+                href="/projets"
+                navigate={[Function]}
+              >
+                <a
+                  className="classic-btn"
+                  href="/projets"
+                  onClick={[Function]}
+                >
+                  Visiter les projets
+                </a>
+              </LinkAnchor>
+            </Link>
+          </ClassicButton>
+          <div
+            className="skills-wrapper"
+          >
+            <div
+              className="skill-wrapper"
+              key="function SvgCoffee0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgCoffee0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Découverte
+                <br />
+                du projet
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgHelp0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgHelp0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Accompagnement
+                <br />
+                & réflexion
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgIntegration0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgIntegration0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Intégration
+                <br />
+                des maquettes
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgDevelopment0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgDevelopment0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Développement
+                <br />
+                front-end
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgProject0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgProject0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Suivi de projet
+                <br />
+                & SAV
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </Services>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`Services view should render 5 skills 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Services>
+      <img
+        alt=""
+        className="services-bubble"
+        src={[Function]}
+      />
+      <main
+        className="page"
+      >
+        <section
+          className="services-wrapper"
+        >
+          <h1
+            className="services-title"
+          >
+            Mes compétences.
+          </h1>
+          <p
+            className="services-subtitle"
+          >
+            J'ai à coeur d'architecturer, et d'intégrer les différents composants d'une application avec soin.
+          </p>
+          <p
+            className="services-subtitle"
+          >
+            Je prends le temps de respecter les guidelines des UI/UX Designers.
+          </p>
+          <p
+            className="services-subtitle"
+          >
+            Délivrer une application maintenable, dev-friendly est mon objectif.
+          </p>
+          <ClassicButton
+            endpoint="/projets"
+            text="Visiter les projets"
+          >
+            <Link
+              className="classic-btn"
+              to="/projets"
+            >
+              <LinkAnchor
+                className="classic-btn"
+                href="/projets"
+                navigate={[Function]}
+              >
+                <a
+                  className="classic-btn"
+                  href="/projets"
+                  onClick={[Function]}
+                >
+                  Visiter les projets
+                </a>
+              </LinkAnchor>
+            </Link>
+          </ClassicButton>
+          <div
+            className="skills-wrapper"
+          >
+            <div
+              className="skill-wrapper"
+              key="function SvgCoffee0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgCoffee0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Découverte
+                <br />
+                du projet
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgHelp0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgHelp0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Accompagnement
+                <br />
+                & réflexion
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgIntegration0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgIntegration0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Intégration
+                <br />
+                des maquettes
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgDevelopment0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgDevelopment0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Développement
+                <br />
+                front-end
+              </p>
+            </div>
+            <div
+              className="skill-wrapper"
+              key="function SvgProject0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgProject0.name})
+  );
+}"
+            >
+              <div
+                className="skill-cube"
+              >
+                <img
+                  alt=""
+                  src={[Function]}
+                  title=""
+                />
+              </div>
+              <p>
+                Suivi de projet
+                <br />
+                & SAV
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </Services>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`Services view should render Services component correctly 1`] = `
+<Fragment>
+  <img
+    alt=""
+    className="services-bubble"
+    src={[Function]}
+  />
+  <main
+    className="page"
+  >
+    <section
+      className="services-wrapper"
+    >
+      <h1
+        className="services-title"
+      >
+        Mes compétences.
+      </h1>
+      <p
+        className="services-subtitle"
+      >
+        J'ai à coeur d'architecturer, et d'intégrer les différents composants d'une application avec soin.
+      </p>
+      <p
+        className="services-subtitle"
+      >
+        Je prends le temps de respecter les guidelines des UI/UX Designers.
+      </p>
+      <p
+        className="services-subtitle"
+      >
+        Délivrer une application maintenable, dev-friendly est mon objectif.
+      </p>
+      <ClassicButton
+        endpoint="/projets"
+        text="Visiter les projets"
+      />
+      <div
+        className="skills-wrapper"
+      >
+        <div
+          className="skill-wrapper"
+          key="function SvgCoffee0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgCoffee0.name})
+  );
+}"
+        >
+          <div
+            className="skill-cube"
+          >
+            <img
+              alt=""
+              src={[Function]}
+              title=""
+            />
+          </div>
+          <p>
+            Découverte
+            <br />
+            du projet
+          </p>
+        </div>
+        <div
+          className="skill-wrapper"
+          key="function SvgHelp0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgHelp0.name})
+  );
+}"
+        >
+          <div
+            className="skill-cube"
+          >
+            <img
+              alt=""
+              src={[Function]}
+              title=""
+            />
+          </div>
+          <p>
+            Accompagnement
+            <br />
+            & réflexion
+          </p>
+        </div>
+        <div
+          className="skill-wrapper"
+          key="function SvgIntegration0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgIntegration0.name})
+  );
+}"
+        >
+          <div
+            className="skill-cube"
+          >
+            <img
+              alt=""
+              src={[Function]}
+              title=""
+            />
+          </div>
+          <p>
+            Intégration
+            <br />
+            des maquettes
+          </p>
+        </div>
+        <div
+          className="skill-wrapper"
+          key="function SvgDevelopment0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgDevelopment0.name})
+  );
+}"
+        >
+          <div
+            className="skill-cube"
+          >
+            <img
+              alt=""
+              src={[Function]}
+              title=""
+            />
+          </div>
+          <p>
+            Développement
+            <br />
+            front-end
+          </p>
+        </div>
+        <div
+          className="skill-wrapper"
+          key="function SvgProject0(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgProject0.name})
+  );
+}"
+        >
+          <div
+            className="skill-cube"
+          >
+            <img
+              alt=""
+              src={[Function]}
+              title=""
+            />
+          </div>
+          <p>
+            Suivi de projet
+            <br />
+            & SAV
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Fragment>
+`;

@@ -10,9 +10,9 @@ interface Service {
 }
 
 const ServicesDatas: Service[] = [
-  { legend: ['Découverte', 'de votre projet'], img: coffee0 },
+  { legend: ['Découverte', 'du projet'], img: coffee0 },
   { legend: ['Accompagnement', '& réflexion'], img: help0 },
-  { legend: ['Intégration', 'de vos maquettes'], img: integration0 },
+  { legend: ['Intégration', 'des maquettes'], img: integration0 },
   { legend: ['Développement', 'front-end'], img: development0 },
   { legend: ['Suivi de projet', '& SAV'], img: project0 },
 ]

@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home view should be possible to click button to access next page 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Home>
+      <main
+        className="home-wrapper page"
+      >
+        <section>
+          <div
+            className="home-title-wrapper"
+          >
+            <div
+              className="home-title-content"
+            >
+              <h1
+                className="home-title"
+              >
+                Cødeur 
+                <br />
+                du web.
+              </h1>
+              <p
+                className="home-subtitle"
+              >
+                Bonjour, je m'appelle Alexandre. 
+                <br />
+                 Depuis plus de 2 ans, j'agite de la matière grise pour donner vie à de nouvelles applications web & mobile innovantes.
+              </p>
+              <ClassicButton
+                endpoint="/a-propos"
+                text="Suivez-moi"
+              >
+                <Link
+                  className="classic-btn"
+                  to="/a-propos"
+                >
+                  <LinkAnchor
+                    className="classic-btn"
+                    href="/a-propos"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="classic-btn"
+                      href="/a-propos"
+                      onClick={[Function]}
+                    >
+                      Suivez-moi
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </ClassicButton>
+            </div>
+          </div>
+          <div
+            className="home-bubble-wrapper"
+          >
+            <img
+              alt=""
+              className="home-bubble"
+              src={[Function]}
+            />
+          </div>
+        </section>
+      </main>
+    </Home>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`Home view should render home component correctly 1`] = `
+<Fragment>
+  <main
+    className="home-wrapper page"
+  >
+    <section>
+      <div
+        className="home-title-wrapper"
+      >
+        <div
+          className="home-title-content"
+        >
+          <h1
+            className="home-title"
+          >
+            Cødeur 
+            <br />
+            du web.
+          </h1>
+          <p
+            className="home-subtitle"
+          >
+            Bonjour, je m'appelle Alexandre. 
+            <br />
+             Depuis plus de 2 ans, j'agite de la matière grise pour donner vie à de nouvelles applications web & mobile innovantes.
+          </p>
+          <ClassicButton
+            endpoint="/a-propos"
+            text="Suivez-moi"
+          />
+        </div>
+      </div>
+      <div
+        className="home-bubble-wrapper"
+      >
+        <img
+          alt=""
+          className="home-bubble"
+          src={[Function]}
+        />
+      </div>
+    </section>
+  </main>
+</Fragment>
+`;

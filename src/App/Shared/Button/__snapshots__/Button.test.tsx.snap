@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render button for 'a-propos' link 1`] = `
+<Link
+  className="classic-btn"
+  to="/a-propos"
+>
+  Faisons connaissance
+</Link>
+`;

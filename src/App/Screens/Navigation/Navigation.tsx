@@ -20,7 +20,7 @@ const Navigation = () => {
       <nav className='navigation-global-wrapper'>
         <NavButtons text='Projets' position='left' path={path} />
         <NavButtons text='Faisons connaissance' position='bottom' path={path} />
-        <NavButtons text='Mes services' position='right' path={path} />
+        <NavButtons text='Compétences' position='right' path={path} />
       </nav>
     </>
   )

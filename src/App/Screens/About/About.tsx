@@ -37,7 +37,10 @@ const About = () => {
               orientés métier. Mais aussi à la création d'applications mobiles,
               comme War of Golf (v2), Home Assist, Dipongo (v2), Dentsply...
             </p>
-            <ClassicButton text='Découvrez mes services' endpoint='/services' />
+            <ClassicButton
+              text='Découvrez mes compétences'
+              endpoint='/services'
+            />
           </div>
         </section>
       </main>

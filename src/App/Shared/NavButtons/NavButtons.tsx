@@ -27,7 +27,7 @@ const NavButtons = ({ text, position, path }: Props) => {
   const getDestination = () => {
     if (text === 'Faisons connaissance') return '/a-propos'
     if (text === 'Projets') return '/projets'
-    if (text === 'Mes services') return '/services'
+    if (text === 'Compétences') return '/services'
     return '/'
   }
 

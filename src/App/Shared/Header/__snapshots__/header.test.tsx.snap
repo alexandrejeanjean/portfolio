@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render header correctly 1`] = `
+<header
+  className="header"
+>
+  <Link
+    className="author-name"
+    to="/"
+  >
+    alexandre jeanjean
+  </Link>
+  <a
+    href="mailto:jeanjeanalexandre@gmail.com"
+    title="contactez-moi"
+  >
+    <img
+      alt=""
+      className="contact"
+      src={[Function]}
+    />
+  </a>
+</header>
+`;

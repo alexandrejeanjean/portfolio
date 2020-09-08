@@ -1,10 +1,11 @@
 import React from 'react'
 import { Route, withRouter } from 'react-router-dom'
 import { AnimatedSwitch } from './AnimatedSwitch'
-import Home from '../Screens/Home/Home'
-import About from '../Screens/About/About'
-import Projects from '../Screens/Projects/Projects'
-import Services from '../Screens/MyServices/Services'
+
+const Home = React.lazy(() => import('./../Screens/Home/Home'))
+const About = React.lazy(() => import('../Screens/About/About'))
+const Projects = React.lazy(() => import('../Screens/Projects/Projects'))
+const Services = React.lazy(() => import('../Screens/MyServices/Services'))
 
 const routes = [
   {

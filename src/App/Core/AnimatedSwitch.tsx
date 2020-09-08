@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch } from 'react-router-dom'
 import posed, { PoseGroup } from 'react-pose'
-// import './styles.css'
+import LoadingLazyPage from '../Screens/Loading/LoadingLazyPage'
 
 /**
  * This component is used to control the routing animation.
@@ -34,9 +34,11 @@ export const AnimatedSwitch = ({
       exitPose={reverse ? 'rightSide' : 'leftSide'}
     >
       <ContextRouteAnimation key={location.pathname} reverse={reverse}>
-        <Switch location={location} {...rest}>
-          {children}
-        </Switch>
+        <React.Suspense fallback={LoadingLazyPage}>
+          <Switch location={location} {...rest}>
+            {children}
+          </Switch>
+        </React.Suspense>
       </ContextRouteAnimation>
     </PoseGroup>
   )

@@ -10,13 +10,13 @@ import Pointer from './Shared/Pointer/Pointer'
 const App = () => {
   useEffect(() => {
     if (!isMobile) {
-      new Pointer()
+      // new Pointer()
     }
   }, [])
   return (
     <div className='App'>
-      <div className='cursor cursor--small'></div>
-      <canvas className='cursor cursor--canvas'></canvas>
+      {/* <div className='cursor cursor--small'></div>
+      <canvas className='cursor cursor--canvas'></canvas> */}
       <BrowserRouter>
         <Template>
           <Routes />

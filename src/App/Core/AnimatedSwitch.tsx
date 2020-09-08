@@ -46,9 +46,6 @@ export const AnimatedSwitch = ({
 
 export default AnimatedSwitch
 
-/**
- * Try to change up the different commented values for varying animatmions
- */
 export const ContextRouteAnimation = posed.div({
   enter: {
     x: 0,

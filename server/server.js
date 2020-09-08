@@ -1,4 +1,4 @@
-/* Simple server to serve on heroku */ */
+/* Simple server to serve on heroku */
 const path = require('path')
 const express = require('express')
 const app = express()

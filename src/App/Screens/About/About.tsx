@@ -1,13 +1,13 @@
 import React from 'react'
 import ClassicButton from '../../Shared/Button/Button'
 import me from '../../Assets/me.png'
-import BubbleT from '../../Assets/BubbleT.svg'
+// import BubbleT from '../../Assets/BubbleT.svg'
 import './about.scss'
 
 const About = () => {
   return (
     <>
-      <img src={BubbleT} className='about-bubble' alt='' />
+      {/* <img src={BubbleT} className='about-bubble' alt='' /> */}
       <main className='about-wrapper page'>
         <img
           className='about-profile-picture'

@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import './projects.scss'
-import BubbleT from '../../Assets/BubbleT.svg'
+// import BubbleT from '../../Assets/BubbleT.svg'
 import ProjectsDatas from './ProjectsDatas'
 import ClassicBtn from '../../Shared/Button/Button'
 
@@ -43,7 +43,7 @@ let cardStyle = (
 const Projects = () => {
   return (
     <>
-      <img src={BubbleT} className='projects-bubble' alt='' />
+      {/* <img src={BubbleT} className='projects-bubble' alt='' /> */}
       <main className='projects-wrapper page'>
         <section className='projects-title-wrapper'>
           <h1>

@@ -73,8 +73,7 @@
     }
   },
   "git-precommit-checks": {
-    "rules": [
-      {
+    "rules": [{
         "filter": "\\.js$",
         "nonBlocking": "true",
         "message": "You’ve got leftover `console.log`",

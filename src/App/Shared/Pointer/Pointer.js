@@ -162,7 +162,7 @@ class Pointer {
       this.isStuck = false
     }
 
-    const linkItems = document.querySelectorAll('a')
+    const linkItems = document.querySelectorAll('a, .classic-btn')
     linkItems.forEach((item) => {
       item.addEventListener('mouseenter', handleMouseEnter)
       item.addEventListener('mouseleave', handleMouseLeave)
@@ -179,7 +179,7 @@ class Pointer {
       TweenMax.to(this.innerCursor, 0.2, { opacity: 1 })
     }
 
-    const mainNavItems = document.querySelectorAll('a')
+    const mainNavItems = document.querySelectorAll('a, .classic-btn')
     mainNavItems.forEach((item) => {
       item.addEventListener('mouseenter', mainNavItemMouseEnter)
       item.addEventListener('mouseleave', mainNavItemMouseLeave)

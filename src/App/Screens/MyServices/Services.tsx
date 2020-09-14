@@ -2,13 +2,13 @@ import React from 'react'
 import ClassicButton from '../../Shared/Button/Button'
 import ServicesDatas from './ServicesDatas'
 
-import BubbleT from '../../Assets/BubbleT.svg'
+// import BubbleT from '../../Assets/BubbleT.svg'
 import './services.scss'
 
 const Services = () => {
   return (
     <>
-      <img src={BubbleT} className='services-bubble' alt='' />
+      {/* <img src={BubbleT} className='services-bubble' alt='' /> */}
       <main className='page'>
         <section className='services-wrapper'>
           <h1 className='services-title'>Mes compétences.</h1>

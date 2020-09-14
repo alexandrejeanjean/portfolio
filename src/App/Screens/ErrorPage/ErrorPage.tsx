@@ -1,5 +1,5 @@
 import React from 'react'
-import BubbleT from '../../Assets/BubbleT.svg'
+// import BubbleT from '../../Assets/BubbleT.svg'
 import ClassicButton from '../../Shared/Button/Button'
 import '../Home/home.scss'
 
@@ -18,7 +18,7 @@ const ErrorPage = () => {
             </div>
           </div>
           <div className='home-bubble-wrapper'>
-            <img src={BubbleT} className='home-bubble' alt='' />
+            {/* <img src={BubbleT} className='home-bubble' alt='' /> */}
           </div>
         </section>
       </main>

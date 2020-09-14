@@ -34,7 +34,7 @@ export const AnimatedSwitch = ({
       exitPose={reverse ? 'rightSide' : 'leftSide'}
     >
       <ContextRouteAnimation key={location.pathname} reverse={reverse}>
-        <React.Suspense fallback={LoadingLazyPage}>
+        <React.Suspense fallback={LoadingLazyPage()}>
           <Switch location={location} {...rest}>
             {children}
           </Switch>

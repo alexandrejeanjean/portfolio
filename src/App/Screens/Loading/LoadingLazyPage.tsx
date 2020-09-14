@@ -1,5 +1,5 @@
 import React from 'react'
-// import BubbleT from '../../Assets/BubbleT.svg'
+import Brain from '../../Assets/Brain'
 import '../Home/home.scss'
 
 const Loading = () => {
@@ -13,7 +13,7 @@ const Loading = () => {
             </div>
           </div>
           <div className='home-bubble-wrapper'>
-            {/* <img src={BubbleT} className='home-bubble' alt='' /> */}
+            <Brain className='home-bubble' />
           </div>
         </section>
       </main>

@@ -1,5 +1,6 @@
 import React from 'react'
 // import BubbleT from '../../Assets/BubbleT.svg'
+import Brain from '../../Assets/Brain'
 import ClassicButton from '../../Shared/Button/Button'
 import './home.scss'
 
@@ -23,7 +24,7 @@ const Home = () => {
             </div>
           </div>
           <div className='home-bubble-wrapper'>
-            {/* <img src={BubbleT} className='home-bubble' alt='' /> */}
+            <Brain className='home-bubble' />
           </div>
         </section>
       </main>

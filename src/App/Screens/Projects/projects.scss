@@ -122,22 +122,22 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
       }
     }
 
-    .left.overlay-dipongo::after {
-      background-image: url(#{$overlay-dipongo});
-      background-repeat: no-repeat;
-    }
-    .right.overlay-fg::after {
-      background-image: url(#{$overlay-fg});
-      background-repeat: no-repeat;
-    }
-    .right.overlay-ha::after {
-      background-image: url(#{$overlay-ha});
-      background-repeat: no-repeat;
-    }
-    .left.overlay-wog::after {
-      background-image: url(#{$overlay-wog});
-      background-repeat: no-repeat;
-    }
+    // .left.overlay-dipongo::after {
+    //   background-image: url(#{$overlay-dipongo});
+    //   background-repeat: no-repeat;
+    // }
+    // .right.overlay-fg::after {
+    //   background-image: url(#{$overlay-fg});
+    //   background-repeat: no-repeat;
+    // }
+    // .right.overlay-ha::after {
+    //   background-image: url(#{$overlay-ha});
+    //   background-repeat: no-repeat;
+    // }
+    // .left.overlay-wog::after {
+    //   background-image: url(#{$overlay-wog});
+    //   background-repeat: no-repeat;
+    // }
 
     .left {
       margin-top: 10%;

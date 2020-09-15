@@ -46,14 +46,16 @@
 
   @media screen and (max-width: 768px) {
     .home-title-wrapper {
-      top: 22vh;
+      top: 32vh;
       left: 5vw;
       .home-title-content {
         .home-title {
-          font-size: 4em !important;
+          font-size: 3rem !important;
         }
         .home-subtitle {
           width: 80vw;
+          font-size: 1.2rem;
+          line-height: 28px;
         }
       }
     }
@@ -67,10 +69,114 @@
       }
 
       .home-bubble {
-        width: 75%;
-        top: 6%;
-        left: 10%;
+        width: 120%;
+        top: 5%;
+        left: -10%;
       }
     }
+  }
+}
+
+.head-animation {
+  animation-name: headAnimation;
+  animation-duration: 7s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.under-head-animation {
+  animation-name: underHeadAnimation;
+  animation-duration: 7s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.arm-animation {
+  animation-name: armAnimation;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.left-arm {
+  animation-delay: 0s;
+  animation-name: leftArmAnimation;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.middle-arm {
+  animation-delay: 0.4s;
+}
+
+.right-arm {
+  animation-delay: 0.8s;
+}
+
+.bubble-animation {
+  animation-name: bubbleAnimation;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftArmAnimation {
+  0% {
+    transform: translateY(-60px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes armAnimation {
+  0% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes headAnimation {
+  0% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes underHeadAnimation {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(40px);
   }
 }

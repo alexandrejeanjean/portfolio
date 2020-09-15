@@ -1,13 +1,11 @@
 import React from 'react'
 import ClassicButton from '../../Shared/Button/Button'
 import me from '../../Assets/me.png'
-import Brain from '../../Assets/Brain'
 import './about.scss'
 
 const About = () => {
   return (
     <>
-      <Brain className='about-bubble' />
       <main className='about-wrapper page'>
         <img
           className='about-profile-picture'

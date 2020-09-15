@@ -13,9 +13,6 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
   margin: auto;
   width: 100%;
   z-index: -1;
-  animation-name: onLoad;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
 }
 
 .projects-wrapper {
@@ -50,7 +47,6 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
     .dipongo-bg {
       background-image: url('../../Assets/projects/dipongo1.png');
     }
-
     .wog-bg {
       background-image: url('../../Assets/projects/wog2.png');
     }
@@ -62,68 +58,107 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
       background-image: url('../../Assets/projects/fillgood3.png');
     }
 
-    .project-card {
-      width: 450px;
-      height: 400px;
-      background-position: center;
-      background-size: cover;
-      border-radius: 10px;
-      padding: 8%;
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    .project-card-wrapper {
       position: relative;
-      filter: grayscale(0.7);
-      animation-name: onLoad;
-      animation-duration: 1.4s;
-      &:hover {
-        filter: grayscale(0);
-        transform: translateY(2px);
-        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
-          0 15px 12px rgba(0, 0, 0, 0.22);
+      min-width: 450px;
+      min-height: 400px;
+      .project-card-button {
+        position: absolute;
+        width: 30%;
+        top: 40%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        font-size: 1.2rem;
+        line-height: 35px;
+        background-color: $fourth;
+        color: #00b1da;
+        background: linear-gradient(259.07deg, #daf8ff 4.07%, #b2eaf8 100%);
+        box-shadow: 0px 8px 20px #e5f4f5;
+        padding: 0.25em 3em;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        transition-duration: 0.5s;
+        transition: all linear 0.3s;
       }
 
-      .card-datas-wrapper {
-        position: absolute;
-        bottom: 0;
-        z-index: 3;
-        padding-bottom: 3%;
-        .card-title {
-          max-width: 100%;
-          margin: 0;
-          font-family: 'NeutraTextBold', 'Arial';
-          color: $main;
-          font-size: 2.8rem;
-        }
-        .card-meta {
-          display: block;
-          list-style-type: none;
-          display: flex;
-          justify-content: flex-start;
-          padding: 0;
-          color: $main;
-          margin-top: 6px;
-          .card-meta-item:first-child {
-            position: relative;
-            margin-right: 12px;
-            &::after {
-              content: '|';
-              position: absolute;
-              top: 0;
-              right: -8px;
+      .project-card {
+        min-width: 450px;
+        min-height: 400px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 8%;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+
+        .card-datas-wrapper {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 3;
+          width: 55%;
+          padding-top: 3%;
+          padding-left: 3%;
+          background: lightblue;
+          border-top-right-radius: 5px;
+          box-shadow: 0px 8px 20px #e5f4f5;
+          .card-title {
+            margin: 0;
+            font-family: 'NeutraTextBold', 'Arial';
+            color: $main;
+            font-size: 2.8rem;
+          }
+          .card-meta {
+            display: block;
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+            color: $main;
+            margin-top: 6px;
+            .card-meta-item:first-child {
+              position: relative;
+              margin-right: 12px;
+              &::after {
+                content: '|';
+                position: absolute;
+                top: 0;
+                right: -8px;
+              }
             }
           }
         }
-        .meta-right {
-          justify-content: flex-end;
-        }
-      }
-      .title-right {
-        right: 5%;
       }
     }
 
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: rgba(0, 0, 0, 0);
+      border-radius: 10px;
+      transition: background 0.5s ease;
+    }
+
+    .project-card-wrapper:hover .project-overlay {
+      display: block;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card-wrapper:hover .project-card-button {
+      opacity: 1;
+    }
+
     .left {
-      margin-top: 10%;
       position: relative;
       overflow-y: hidden;
       padding-bottom: 5%;
@@ -151,7 +186,6 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
 @media screen and (max-width: 768px) {
   .projects-wrapper {
     padding-bottom: 2%;
-
     .projects-title-wrapper {
       padding-left: 0;
       display: block;
@@ -166,66 +200,50 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
     }
 
     .projects-cards-wrapper {
-      margin-top: 2%;
       padding-left: 0;
       padding-right: 0;
       grid-gap: 50px 50px;
 
-      .project-card {
-        width: 85vw;
-        height: 400px;
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        padding: 0%;
+      .project-card-wrapper {
+        .project-card {
+          height: 400px;
+          width: 85vw;
+          min-width: 200px;
+          min-height: 200px;
+          background-position: center;
+          background-size: cover;
+          border-radius: 10px;
+          padding: 0%;
 
-        &:hover {
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-            0 3px 6px rgba(0, 0, 0, 0.23);
-        }
+          &:hover {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+              0 3px 6px rgba(0, 0, 0, 0.23);
+          }
 
-        .card-datas-wrapper {
-          padding: 2%;
-          .card-title {
-            font-size: 2rem;
+          .card-datas-wrapper {
+            width: 60%;
+            padding-top: 2.2%;
+            padding-left: 2%;
+            .card-title {
+              font-size: 1.6rem;
+            }
+            .card-meta {
+              font-size: 1rem;
+            }
           }
         }
+      }
+
+      .project-overlay,
+      .project-card-wrapper:hover .project-overlay,
+      .project-card-button,
+      .project-card-wrapper:hover .project-card-button {
+        display: none;
       }
     }
   }
 
   .contact-btn-wrapper {
     padding-bottom: 120px;
-  }
-}
-
-@keyframes textApparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes sheenRight {
-  100% {
-    transform: rotateZ(60deg) translate(0, -20%);
-    width: 200%;
-    height: 200%;
-  }
-}
-
-@keyframes sheenLeft {
-  100% {
-    transform: rotateZ(55deg) translate(-14%, 2%);
-    width: 200%;
-    height: 200%;
-  }
-}
-
-@keyframes sheenMobile {
-  100% {
-    background-color: rgba(255, 255, 255, 0.8);
   }
 }

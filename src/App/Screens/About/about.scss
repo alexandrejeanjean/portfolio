@@ -8,9 +8,6 @@
   margin: auto;
   width: 140%;
   z-index: -1;
-  animation-name: onLoad;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
 }
 
 .about-wrapper {
@@ -24,8 +21,6 @@
     border-radius: 10px;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     filter: opacity(0.6);
-    animation-name: onLoad;
-    animation-duration: 1.2s;
     &:hover {
       filter: opacity(1);
       transform: translateY(2px);

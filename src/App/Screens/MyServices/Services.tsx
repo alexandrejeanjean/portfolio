@@ -1,14 +1,11 @@
 import React from 'react'
 import ClassicButton from '../../Shared/Button/Button'
 import ServicesDatas from './ServicesDatas'
-
-import Brain from '../../Assets/Brain'
 import './services.scss'
 
 const Services = () => {
   return (
     <>
-      <Brain className='services-bubble' />
       <main className='page'>
         <section className='services-wrapper'>
           <h1 className='services-title'>Mes compétences.</h1>

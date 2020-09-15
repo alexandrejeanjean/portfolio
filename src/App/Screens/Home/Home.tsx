@@ -1,5 +1,5 @@
 import React from 'react'
-// import BubbleT from '../../Assets/BubbleT.svg'
+
 import Brain from '../../Assets/Brain'
 import ClassicButton from '../../Shared/Button/Button'
 import './home.scss'

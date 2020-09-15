@@ -58,7 +58,7 @@ export const ContextRouteAnimation = posed.div({
     },
   },
   leftSide: {
-    x: '-100%',
+    x: '-100vw',
     opacity: 0,
     // scale: 1.5,
     transition: {
@@ -68,7 +68,7 @@ export const ContextRouteAnimation = posed.div({
     },
   },
   rightSide: {
-    x: '100%',
+    x: '100vw',
     opacity: 0,
     // scale: 1.5,
     transition: {

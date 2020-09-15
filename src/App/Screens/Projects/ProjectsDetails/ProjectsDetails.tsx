@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import NextPrevButton from '../../../Shared/NextPrevBtn/NextPrevBtn'
 import ProjectsDatas from '../ProjectsDatas'
 import './projectsDetails.scss'
 
@@ -23,7 +24,12 @@ const Pictures = (projectId: number) => {
 }
 
 const ProjectDetails = ({ location }: Props) => {
-  const projectId = location?.state?.project?.id
+  const [activeProjectId, setActiveProjectId] = useState(0)
+
+  useEffect(() => {
+    let projectId = location?.state?.project?.id
+    if (projectId) return setActiveProjectId(projectId)
+  }, [location])
 
   return (
     <>
@@ -32,19 +38,32 @@ const ProjectDetails = ({ location }: Props) => {
           <div className='back-btn-wrapper'>
             <Link to='/projets'>{`< Projets`}</Link>
           </div>
-          <h1>{ProjectsDatas[projectId].title}</h1>
-          <h2>{ProjectsDatas[projectId].appType}</h2>
+          <h1>{ProjectsDatas[activeProjectId].title}</h1>
+          <h2>{ProjectsDatas[activeProjectId].appType}</h2>
         </section>
         <section className='project-details-wrapper'>
           <div className='project-details-picture-wrapper'>
-            {Pictures(projectId)}
+            {Pictures(activeProjectId)}
           </div>
           <div className='project-details-description'>
-            {ProjectsDatas[projectId].description.map((desc) => (
-              <p>{desc}</p>
+            {ProjectsDatas[activeProjectId].description.map((desc) => (
+              <p key={desc}>{desc}</p>
             ))}
           </div>
         </section>
+        {activeProjectId > 0 && activeProjectId < ProjectsDatas.length && (
+          <NextPrevButton
+            handleClick={() => setActiveProjectId(activeProjectId - 1)}
+            text={ProjectsDatas[activeProjectId - 1]?.title}
+          ></NextPrevButton>
+        )}
+        <span> | </span>
+        {activeProjectId < ProjectsDatas.length && (
+          <NextPrevButton
+            handleClick={() => setActiveProjectId(activeProjectId + 1)}
+            text={ProjectsDatas[activeProjectId + 1]?.title}
+          ></NextPrevButton>
+        )}
       </main>
     </>
   )

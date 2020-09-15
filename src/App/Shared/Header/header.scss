@@ -17,10 +17,6 @@
 
   .contact {
     width: 40px;
-    animation-name: gelatine;
-    animation-delay: 0.4s;
-    animation-duration: 0.8s;
-    animation-iteration-count: 2;
   }
 }
 
@@ -31,21 +27,5 @@
     .contact {
       margin-right: 10vw;
     }
-  }
-}
-
-@keyframes gelatine {
-  from,
-  to {
-    transform: scale(1, 1);
-  }
-  25% {
-    transform: scale(0.9, 1.1);
-  }
-  50% {
-    transform: scale(1.1, 0.9);
-  }
-  75% {
-    transform: scale(0.95, 1.05);
   }
 }

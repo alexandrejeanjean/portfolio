@@ -66,17 +66,16 @@ const Projects = () => {
                 },
               }}
             >
-              <div className={cardStyle(i, false, false, item.picture)}>
-                <div className={cardStyle(i, true, false, item.picture)}>
-                  <h2 className='card-title'>{item.title}</h2>
-                  <ul className={cardStyle(i, false, true, item.picture)}>
-                    <li className='card-meta-item'>{item.integration}</li>
-                    <li>{item.development}</li>
-                  </ul>
-                </div>
+              <div className={cardStyle(i, false, false, item.picture)}></div>
+              <div className={cardStyle(i, true, false, item.picture)}>
+                <h2 className='card-title'>{item.title}</h2>
+                <ul className={cardStyle(i, false, true, item.picture)}>
+                  <li className='card-meta-item'>{item.integration}</li>
+                  <li>{item.development}</li>
+                </ul>
               </div>
               <div className='project-overlay'></div>
-              <div className={btnStyle(i)}>En savoir plus</div>
+              <div className={btnStyle(i)}></div>
             </Link>
           ))}
         </section>

@@ -16,7 +16,7 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
 }
 
 .projects-wrapper {
-  padding-bottom: 2%;
+  padding-top: 2.5%;
   .projects-title-wrapper {
     padding-left: 100px;
     display: block;
@@ -64,24 +64,14 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
       min-height: 400px;
       .project-card-button {
         position: absolute;
-        width: 30%;
-        top: 40%;
+        width: 120px;
+        height: 120px;
+        top: 35%;
         left: 0;
         right: 0;
         margin: auto;
         opacity: 0;
-        font-size: 1.2rem;
-        line-height: 35px;
-        background-color: $fourth;
-        color: #00b1da;
-        background: linear-gradient(259.07deg, #daf8ff 4.07%, #b2eaf8 100%);
-        box-shadow: 0px 8px 20px #e5f4f5;
-        padding: 0.25em 3em;
-        vertical-align: middle;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 5px;
+        background: url('../../Assets/arrow-right.svg') no-repeat;
         transition-duration: 0.5s;
         transition: all linear 0.3s;
       }
@@ -93,44 +83,49 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
         background-size: cover;
         border-radius: 10px;
         padding: 8%;
+        position: relative;
+      }
 
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-          0 6px 6px rgba(0, 0, 0, 0.23);
+      .card-datas-wrapper {
+        position: absolute;
+        left: -20px;
+        bottom: -20px;
+        z-index: 5;
+        padding: 3%;
+        width: 300px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+        transition: all, ease-in-out, 0.3s;
 
-        .card-datas-wrapper {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          z-index: 3;
-          width: 55%;
-          padding-top: 3%;
-          padding-left: 3%;
-          background: lightblue;
-          border-top-right-radius: 5px;
-          box-shadow: 0px 8px 20px #e5f4f5;
-          .card-title {
-            margin: 0;
-            font-family: 'NeutraTextBold', 'Arial';
-            color: $main;
-            font-size: 2.8rem;
-          }
-          .card-meta {
-            display: block;
-            list-style-type: none;
-            display: flex;
-            justify-content: flex-start;
-            padding: 0;
-            color: $main;
-            margin-top: 6px;
-            .card-meta-item:first-child {
-              position: relative;
-              margin-right: 12px;
-              &::after {
-                content: '|';
-                position: absolute;
-                top: 0;
-                right: -8px;
-              }
+        .card-title {
+          margin: auto;
+          font-family: 'NeutraTextBold', 'Arial';
+          color: $main;
+          font-size: 2rem;
+        }
+        .card-meta {
+          display: block;
+          list-style-type: none;
+          display: flex;
+          justify-content: flex-start;
+          padding: 0;
+          color: $main;
+          margin: auto;
+          margin-top: -10px;
+
+          .card-meta-item:first-child {
+            position: relative;
+            margin-right: 12px;
+            &::after {
+              content: '|';
+              position: absolute;
+              top: 0;
+              right: -8px;
             }
           }
         }
@@ -185,7 +180,6 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
 
 @media screen and (max-width: 768px) {
   .projects-wrapper {
-    padding-bottom: 2%;
     .projects-title-wrapper {
       padding-left: 0;
       display: block;
@@ -241,9 +235,10 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
         display: none;
       }
     }
-  }
 
-  .contact-btn-wrapper {
-    padding-bottom: 120px;
+    .contact-btn-wrapper {
+      margin-top: 40px;
+      margin-bottom: 15vh;
+    }
   }
 }

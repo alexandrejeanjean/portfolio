@@ -1,20 +1,20 @@
 import React from 'react'
-import Brain from '../../Assets/Brain'
-import '../Home/home.scss'
+import Loader from 'react-loader-spinner'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import './loader.scss'
 
 const Loading = () => {
   return (
     <>
-      <main className='home-wrapper page'>
-        <section>
-          <div className='home-title-wrapper'>
-            <div className='home-title-content'>
-              <h1 className='home-title'>Chargement de l'itinéraire...</h1>
-            </div>
-          </div>
-          <div className='home-bubble-wrapper'>
-            <Brain className='home-bubble' />
-          </div>
+      <main className='loader-wrapper page'>
+        <section className='loader'>
+          <Loader
+            type='Circles'
+            color='rgba(137, 194, 217, 0.3)'
+            height={100}
+            width={100}
+            timeout={3000}
+          />
         </section>
       </main>
     </>

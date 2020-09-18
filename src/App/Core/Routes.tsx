@@ -9,6 +9,9 @@ const Services = React.lazy(() => import('../Screens/MyServices/Services'))
 const ProjectsDetails = React.lazy(
   () => import('../Screens/Projects/ProjectsDetails/ProjectsDetails')
 )
+
+const ErrorPage = React.lazy(() => import('./../Screens/ErrorPage/ErrorPage'))
+
 const routes = [
   {
     component: Home,
@@ -34,6 +37,10 @@ const routes = [
     component: Services,
     path: '/services',
     exact: true,
+  },
+  {
+    component: ErrorPage,
+    path: '',
   },
 ]
 

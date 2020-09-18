@@ -18,6 +18,7 @@
     "react": "^16.13.1",
     "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
+    "react-emoji-render": "^1.2.4",
     "react-loader-spinner": "^3.1.14",
     "react-pose": "^4.0.10",
     "react-redux": "^7.2.1",
@@ -27,7 +28,7 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -75,8 +76,7 @@
     }
   },
   "git-precommit-checks": {
-    "rules": [
-      {
+    "rules": [{
         "filter": "\\.js$",
         "nonBlocking": "true",
         "message": "You’ve got leftover `console.log`",

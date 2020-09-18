@@ -44,6 +44,17 @@
       }
     }
   }
+
+  .navigation-wrapper {
+    .vertical-divider {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    max-width: 240px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -61,7 +72,6 @@
     }
 
     .project-details-wrapper {
-      padding-bottom: 15vh;
       .project-details-picture-wrapper {
         width: 80vw;
 
@@ -72,6 +82,11 @@
       .project-details-description {
         width: 90vw;
       }
+    }
+
+    .navigation-wrapper {
+      margin-top: 0;
+      padding-bottom: 10vh;
     }
   }
 }

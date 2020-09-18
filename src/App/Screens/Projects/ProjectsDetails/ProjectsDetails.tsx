@@ -51,19 +51,21 @@ const ProjectDetails = ({ location }: Props) => {
             ))}
           </div>
         </section>
-        {activeProjectId > 0 && activeProjectId < ProjectsDatas.length && (
-          <NextPrevButton
-            handleClick={() => setActiveProjectId(activeProjectId - 1)}
-            text={ProjectsDatas[activeProjectId - 1]?.title}
-          ></NextPrevButton>
-        )}
-        <span> | </span>
-        {activeProjectId < ProjectsDatas.length && (
-          <NextPrevButton
-            handleClick={() => setActiveProjectId(activeProjectId + 1)}
-            text={ProjectsDatas[activeProjectId + 1]?.title}
-          ></NextPrevButton>
-        )}
+        <section className='navigation-wrapper'>
+          {activeProjectId > 0 && activeProjectId < ProjectsDatas.length && (
+            <NextPrevButton
+              handleClick={() => setActiveProjectId(activeProjectId - 1)}
+              text={`< ${ProjectsDatas[activeProjectId - 1]?.title}`}
+            ></NextPrevButton>
+          )}
+          <span className='vertical-divider'>|</span>
+          {activeProjectId + 1 < ProjectsDatas.length && (
+            <NextPrevButton
+              handleClick={() => setActiveProjectId(activeProjectId + 1)}
+              text={`${ProjectsDatas[activeProjectId + 1]?.title} >`}
+            ></NextPrevButton>
+          )}
+        </section>
       </main>
     </>
   )

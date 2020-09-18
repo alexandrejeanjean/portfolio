@@ -47,7 +47,9 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+.vertical-divider,
+.card-meta-item:first-child {
   opacity: 0;
   animation-name: appear;
   animation-fill-mode: forwards;
@@ -55,9 +57,7 @@ p {
   animation-delay: 0.4s;
 }
 
-svg,
-img,
-img.contact {
+svg {
   opacity: 0;
   animation-name: appearUp;
   animation-fill-mode: forwards;
@@ -65,8 +65,6 @@ img.contact {
   animation-delay: 0.2s;
 }
 
-img,
-li,
 .classic-btn {
   opacity: 0;
   animation-name: appearUp;
@@ -75,12 +73,23 @@ li,
   animation-delay: 0.6s;
 }
 
+img,
+li,
+img.contact,
+.skill-cube {
+  opacity: 0;
+  animation-name: appearUp;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+
 .nav-button-link {
   opacity: 0;
   animation-name: appearNavDesktop;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  animation-delay: 0.2s;
+  animation-delay: 1s;
 }
 
 .page {

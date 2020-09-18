@@ -1,5 +1,5 @@
 import React from 'react'
-// import BubbleT from '../../Assets/BubbleT.svg'
+import Emoji from 'react-emoji-render'
 import ClassicButton from '../../Shared/Button/Button'
 import '../Home/home.scss'
 
@@ -13,12 +13,10 @@ const ErrorPage = () => {
               <h1 className='home-title'>Erreur de calcul...</h1>
               <p className='home-subtitle'>
                 Nouvelle itinéraire juste en dessous
+                <Emoji text='👇' onlyEmojiClassName='make-emojis-large' />
               </p>
               <ClassicButton text='Reprendre la route' endpoint='/' />
             </div>
-          </div>
-          <div className='home-bubble-wrapper'>
-            {/* <img src={BubbleT} className='home-bubble' alt='' /> */}
           </div>
         </section>
       </main>

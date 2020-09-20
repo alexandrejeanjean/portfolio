@@ -2,17 +2,15 @@
 
 .services-bubble {
   position: fixed;
-  bottom: -15%;
-  left: 0;
-  right: 0;
+  top: 10%;
+  right: -30%;
   margin: auto;
-  width: 140%;
+  width: 100%;
   z-index: -1;
 }
 
 .services-wrapper {
   padding-left: 100px;
-  padding-top: 2.5%;
   .services-title {
     font-size: 4rem;
     margin-bottom: 10px;
@@ -68,14 +66,7 @@
 
 @media screen and (max-width: 768px) {
   .services-bubble {
-    position: fixed;
-    top: -15%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 140%;
-    z-index: -1;
-    transform: rotate(25deg);
+    display: none;
   }
 
   .services-wrapper {

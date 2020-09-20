@@ -1,4 +1,5 @@
 import React from 'react'
+import BrainHead from '../../Assets/BrainHead'
 import ClassicButton from '../../Shared/Button/Button'
 import ServicesDatas from './ServicesDatas'
 import './services.scss'
@@ -6,6 +7,7 @@ import './services.scss'
 const Services = () => {
   return (
     <>
+      <BrainHead className='services-bubble' />
       <main className='page'>
         <section className='services-wrapper'>
           <h1 className='services-title'>Mes compétences.</h1>

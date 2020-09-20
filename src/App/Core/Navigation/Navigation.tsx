@@ -17,10 +17,25 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className='navigation-global-wrapper'>
-        <NavButtons text='Projets' position='left' path={path} />
-        <NavButtons text='Faisons connaissance' position='bottom' path={path} />
-        <NavButtons text='Compétences' position='right' path={path} />
+      <nav className='desktop-navigation-wrapper'>
+        <NavButtons
+          text='Projets'
+          position='left'
+          path={path}
+          isMobile={false}
+        />
+        <NavButtons
+          text='Faisons connaissance'
+          position='bottom'
+          path={path}
+          isMobile={false}
+        />
+        <NavButtons
+          text='Compétences'
+          position='right'
+          path={path}
+          isMobile={false}
+        />
       </nav>
     </>
   )

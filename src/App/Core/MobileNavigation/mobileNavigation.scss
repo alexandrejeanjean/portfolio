@@ -1,0 +1,21 @@
+.mobile-navigation-wrapper {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mobile-navigation-wrapper {
+    width: 95vw;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+}

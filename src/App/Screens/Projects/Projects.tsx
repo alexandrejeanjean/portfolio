@@ -80,7 +80,7 @@ const Projects = () => {
           ))}
         </section>
         <div className='contact-btn-wrapper'>
-          <ClassicBtn text='Ecrivez-moi' endpoint='/' />
+          <ClassicBtn text='Ecrivez-moi' endpoint='/' isMailTo />
         </div>
       </main>
     </>

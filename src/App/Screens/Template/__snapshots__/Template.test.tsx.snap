@@ -4,6 +4,7 @@ exports[`Template view should render Template component correctly 1`] = `
 <Fragment>
   <Header />
   <Navigation />
+  <MobileNavigation />
   <Component />
 </Fragment>
 `;

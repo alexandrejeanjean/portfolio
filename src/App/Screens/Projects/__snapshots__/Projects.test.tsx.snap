@@ -2,11 +2,6 @@
 
 exports[`Projects component should render Projects component correctly 1`] = `
 <Fragment>
-  <img
-    alt=""
-    className="projects-bubble"
-    src={[Function]}
-  />
   <main
     className="projects-wrapper page"
   >
@@ -28,17 +23,40 @@ exports[`Projects component should render Projects component correctly 1`] = `
     <section
       className="projects-cards-wrapper"
     >
-      <div
-        className="project-card left dipongo-bg overlay-dipongo"
-        data-description="Dipongo(v2) est une application crossplateformes mêlant le virtuel au réel. Stimulant l'imaginaire de l'enfant au travers d'aventures fantastiques.
-"
-        data-description2="Développée avec React Native, j'ai pris part à l'intégration du responsive pour mobile, et l'ajout de fonctionnalités.
-"
-        data-description3="#ReactNative #Redux #Scss"
+      <Link
+        className="project-card-wrapper"
         key="Dipongo"
+        to={
+          Object {
+            "pathname": "/projets/dipongo",
+            "state": Object {
+              "project": Object {
+                "appType": "Application Ios & Android",
+                "description": Array [
+                  "Dipongo(v2) est une application crossplateformes mêlant le virtuel au réel.",
+                  "Stimulant l'imaginaire de l'enfant au travers d'aventures fantastiques.",
+                  "Développée avec React Native, au sein de l'agence sqal.io, j'ai pris part à l'intégration du responsive pour mobile, et l'ajout de nouvelles fonctionnalités.",
+                  "#Android #Ios #ReactNative #Redux #Scss",
+                ],
+                "development": "Development",
+                "endpoint": "/projets/dipongo",
+                "id": 0,
+                "integration": "Integration",
+                "picture": "dipongo",
+                "pictures": Array [
+                  null,
+                ],
+                "title": "Dipongo",
+              },
+            },
+          }
+        }
       >
         <div
-          className="card-datas-wrapper"
+          className="project-card left dipongo-bg"
+        />
+        <div
+          className="card-datas-wrapper title-left"
         >
           <h2
             className="card-title"
@@ -46,7 +64,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
             Dipongo
           </h2>
           <ul
-            className="card-meta meta-right"
+            className="card-meta meta-left"
           >
             <li
               className="card-meta-item"
@@ -58,16 +76,44 @@ exports[`Projects component should render Projects component correctly 1`] = `
             </li>
           </ul>
         </div>
-      </div>
-      <div
-        className="project-card right ha-bg overlay-ha"
-        data-description="Home Assist est un application connectée Android qui permet de simplifier et de faciliter le quotidien des seniors vivant seuls et loin de leurs proches.
-"
-        data-description2="En collaboration avec le développeur back-end de chez Home Assist, j'ai réalisé l'intégration et le développement de l'application Android.
-"
-        data-description3="#ReactNative #Redux #StyledComponent"
+        <div
+          className="project-overlay"
+        />
+        <div
+          className="project-card-button left"
+        />
+      </Link>
+      <Link
+        className="project-card-wrapper"
         key="Home Assist"
+        to={
+          Object {
+            "pathname": "/projets/home-assist",
+            "state": Object {
+              "project": Object {
+                "appType": "Application Android",
+                "description": Array [
+                  "Home Assist est un application connectée Android qui permet de simplifier et de faciliter le quotidien des seniors vivant seuls et loin de leurs proches.",
+                  "En collaboration avec le développeur back-end de chez Home Assist, j'ai réalisé au sein de l'agence sqal.io, l'intégration des maquettes. Dans un second temps le développement de l'application Android, ainsi qu'une application mobile à destination des proches.",
+                  "#Android #ReactNative #Redux #StyledComponent",
+                ],
+                "development": "Development",
+                "endpoint": "/projets/home-assist",
+                "id": 1,
+                "integration": "Integration",
+                "picture": "ha",
+                "pictures": Array [
+                  null,
+                ],
+                "title": "Home Assist",
+              },
+            },
+          }
+        }
       >
+        <div
+          className="project-card right ha-bg"
+        />
         <div
           className="card-datas-wrapper title-right"
         >
@@ -77,7 +123,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
             Home Assist
           </h2>
           <ul
-            className="card-meta"
+            className="card-meta meta-right"
           >
             <li
               className="card-meta-item"
@@ -89,23 +135,110 @@ exports[`Projects component should render Projects component correctly 1`] = `
             </li>
           </ul>
         </div>
-      </div>
-      <div
-        className="project-card left wog-bg overlay-wog"
-        data-description="War of Golf est une application Android et Ios qui offre une experience nouvelle du golf. Affronter ses amis sur le terrain, créer sa communauté, ou apprendre à jouer au golf via l'Academy.
-"
-        data-description2="Il m'a été confié, la refonte intégrale et le développement de nouvelles fonctionnalités de la version 2.0.
-"
-        data-description3="#ReactNative #Redux #StyledComponent"
+        <div
+          className="project-overlay"
+        />
+        <div
+          className="project-card-button"
+        />
+      </Link>
+      <Link
+        className="project-card-wrapper"
         key="War of Golf"
+        to={
+          Object {
+            "pathname": "/projets/war-of-golf",
+            "state": Object {
+              "project": Object {
+                "appType": "Application Ios & Android",
+                "description": Array [
+                  "War of Golf est une application Android et Ios qui offre une experience nouvelle du golf. Affronter ses amis sur le terrain, créer sa communauté, ou apprendre à jouer au golf via l'Academy.",
+                  "Au sein de l'agence sqal.io, il m'a été confié, la refonte intégrale et le développement de nouvelles fonctionnalités de la version 2.0.",
+                  "#Android #Ios #ReactNative #Redux #StyledComponent",
+                ],
+                "development": "Development",
+                "endpoint": "/projets/war-of-golf",
+                "id": 2,
+                "integration": "Integration",
+                "picture": "wog",
+                "pictures": Array [
+                  null,
+                ],
+                "title": "War of Golf",
+              },
+            },
+          }
+        }
       >
         <div
-          className="card-datas-wrapper"
+          className="project-card left wog-bg"
+        />
+        <div
+          className="card-datas-wrapper title-left"
         >
           <h2
             className="card-title"
           >
             War of Golf
+          </h2>
+          <ul
+            className="card-meta meta-left"
+          >
+            <li
+              className="card-meta-item"
+            >
+              Integration
+            </li>
+            <li>
+              Development
+            </li>
+          </ul>
+        </div>
+        <div
+          className="project-overlay"
+        />
+        <div
+          className="project-card-button left"
+        />
+      </Link>
+      <Link
+        className="project-card-wrapper"
+        key="Fillgood"
+        to={
+          Object {
+            "pathname": "/projets/fillgood",
+            "state": Object {
+              "project": Object {
+                "appType": "Application web",
+                "description": Array [
+                  "L'application web FillGood, est une plateforme permettant la livraison de carburant aux particuliers et entreprises.",
+                  "En charge de l'intégration et du développement de l'application web au sein de l'agence sqal.io. J'ai développé une interface entièrement responsive, avec 3 accès : administrateur, employé et client.",
+                  "#Web #ReactJS #Redux #StyledComponent",
+                ],
+                "development": "Development",
+                "endpoint": "/projets/fillgood",
+                "id": 3,
+                "integration": "Integration",
+                "picture": "fillgood",
+                "pictures": Array [
+                  null,
+                ],
+                "title": "Fillgood",
+              },
+            },
+          }
+        }
+      >
+        <div
+          className="project-card right fg-bg"
+        />
+        <div
+          className="card-datas-wrapper title-right"
+        >
+          <h2
+            className="card-title"
+          >
+            Fillgood
           </h2>
           <ul
             className="card-meta meta-right"
@@ -120,44 +253,20 @@ exports[`Projects component should render Projects component correctly 1`] = `
             </li>
           </ul>
         </div>
-      </div>
-      <div
-        className="project-card right fg-bg overlay-fg"
-        data-description="L'application web FillGood, est une plateforme permettant la livraison de carburant aux particuliers et entreprises.
-"
-        data-description2="En charge de l'intégration et du développement de l'application web. J'ai développé une interface entièrement responsive, avec 3 accès différents selon le profil de l'utilisateur.
-"
-        data-description3="#ReactJS #Redux #StyledComponent"
-        key="Fillgood"
-      >
         <div
-          className="card-datas-wrapper title-right"
-        >
-          <h2
-            className="card-title"
-          >
-            Fillgood
-          </h2>
-          <ul
-            className="card-meta"
-          >
-            <li
-              className="card-meta-item"
-            >
-              Integration
-            </li>
-            <li>
-              Development
-            </li>
-          </ul>
-        </div>
-      </div>
+          className="project-overlay"
+        />
+        <div
+          className="project-card-button"
+        />
+      </Link>
     </section>
     <div
       className="contact-btn-wrapper"
     >
       <ClassicButton
         endpoint="/"
+        isMailTo={true}
         text="Ecrivez-moi"
       />
     </div>

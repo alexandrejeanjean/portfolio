@@ -2,7 +2,7 @@
 
 exports[`NavButtons should render nav buttons correctly 1`] = `
 <div
-  className="nav-link-wrapper"
+  className="desktop-nav-link-wrapper"
 >
   <Link
     className="nav-button-link bottom bottom-focused"

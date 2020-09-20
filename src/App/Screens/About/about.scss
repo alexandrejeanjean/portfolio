@@ -2,17 +2,16 @@
 
 .about-bubble {
   position: fixed;
-  top: 2%;
-  left: 15%;
-  right: 0;
+  top: 10%;
+  right: -30%;
   margin: auto;
-  width: 140%;
+  width: 100%;
   z-index: -1;
 }
 
 .about-wrapper {
   padding-top: 2.5%;
-  .about-profile-picture {
+  .desktop-about-profile-picture {
     width: 350px;
     position: absolute;
     right: 15%;
@@ -25,6 +24,10 @@
       filter: opacity(1);
       transform: translateY(2px);
     }
+  }
+
+  .mobile-about-profile-picture {
+    display: none;
   }
   .about-presentation-wrapper {
     margin: auto;
@@ -56,9 +59,26 @@
 }
 
 @media screen and (max-width: 768px) {
+  .about-bubble {
+    display: none;
+  }
+
   .about-wrapper {
-    .about-profile-picture {
+    .desktop-about-profile-picture {
       display: none;
+    }
+    .mobile-about-profile-picture {
+      display: unset;
+      float: left;
+      width: 100px;
+      margin-right: 10px;
+      border-radius: 10px;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      filter: opacity(0.6);
+      &:hover {
+        filter: opacity(1);
+        transform: translateY(2px);
+      }
     }
     .about-presentation-wrapper {
       width: 85vw;

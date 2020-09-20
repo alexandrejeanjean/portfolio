@@ -1,22 +1,23 @@
 .header {
+  width: 100vw;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90vw;
   background-color: #fff;
   text-transform: uppercase;
   padding-top: 20px;
-  padding-left: 5vw;
   padding-bottom: 15px;
   z-index: 10;
   .author-name {
     font-family: 'NeutraTextBook', 'Arial';
     font-size: 0.6em;
+    margin-left: 5vw;
   }
 
   .contact {
     width: 40px;
+    margin-right: 5vw;
   }
 }
 
@@ -24,8 +25,12 @@
   .header {
     width: 100vw;
     height: 20px;
+    .author-name {
+      margin-left: 8vw;
+    }
     .contact {
-      margin-right: 10vw;
+      width: 30px;
+      margin-right: 8vw;
     }
   }
 }

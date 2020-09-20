@@ -25,11 +25,160 @@ exports[`Services view should be possible to click button to access next page 1`
     }
   >
     <Services>
-      <img
-        alt=""
+      <SvgComponent
         className="services-bubble"
-        src={[Function]}
-      />
+      >
+        <svg
+          className="services-bubble"
+          viewBox="0 0 831 612"
+        >
+          <linearGradient
+            gradientTransform="matrix(1 0 0 -1 0 702)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__a"
+            x1={186}
+            x2={788.506}
+            y1={332.118}
+            y2={332.118}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <path
+            d="M187.6 391.4C201.9 272.5 315.7 183.1 423 156c22.9-5.7 91.5-22.1 170.7 5.2 85.1 29.3 184.4 109.6 194 227.6 5.5 67.7-16.7 172.1-82.8 199.2-87.2 35.7-159.8-100.4-300-77.6-81.9 13.3-111.3 68.6-157.7 49.1-50.2-21.2-66.9-107.4-59.6-168.1z"
+            fill="url(#prefix__a)"
+          />
+          <linearGradient
+            gradientTransform="matrix(1 0 0 -1 0 702)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__b"
+            x1={197.494}
+            x2={800}
+            y1={325.55}
+            y2={325.55}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <path
+            d="M199.1 397.9C213.4 279 327.2 189.6 434.5 162.5c22.9-5.7 91.5-22.1 170.7 5.2 85.1 29.3 184.4 109.6 194 227.6 5.5 67.7-16.7 172.1-82.8 199.2-87.2 35.7-159.8-100.4-300-77.6-81.9 13.4-111.3 68.7-157.8 49.2-50.1-21.2-66.8-107.4-59.5-168.2z"
+            fill="url(#prefix__b)"
+            opacity={0.39}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__c"
+            x1={979.617}
+            x2={1023.67}
+            y1={-638.811}
+            y2={-594.758}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={255.1}
+            cy={164.7}
+            fill="url(#prefix__c)"
+            opacity={0.39}
+            r={31.2}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__d"
+            x1={1203.277}
+            x2={1269.322}
+            y1={-698.562}
+            y2={-632.518}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={54.7}
+            cy={296.1}
+            fill="url(#prefix__d)"
+            opacity={0.39}
+            r={46.7}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__e"
+            x1={738.893}
+            x2={760.92}
+            y1={-573.638}
+            y2={-551.611}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={471.4}
+            cy={24.9}
+            fill="url(#prefix__e)"
+            opacity={0.39}
+            r={15.6}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__f"
+            x1={575.431}
+            x2={663.537}
+            y1={-322.449}
+            y2={-234.342}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={764.6}
+            cy={133.7}
+            fill="url(#prefix__f)"
+            opacity={0.39}
+            r={62.3}
+          />
+        </svg>
+      </SvgComponent>
       <main
         className="page"
       >
@@ -61,16 +210,16 @@ exports[`Services view should be possible to click button to access next page 1`
             text="Visiter les projets"
           >
             <Link
-              className="classic-btn"
+              className="classic-btn "
               to="/projets"
             >
               <LinkAnchor
-                className="classic-btn"
+                className="classic-btn "
                 href="/projets"
                 navigate={[Function]}
               >
                 <a
-                  className="classic-btn"
+                  className="classic-btn "
                   href="/projets"
                   onClick={[Function]}
                 >
@@ -235,11 +384,160 @@ exports[`Services view should render 5 skills 1`] = `
     }
   >
     <Services>
-      <img
-        alt=""
+      <SvgComponent
         className="services-bubble"
-        src={[Function]}
-      />
+      >
+        <svg
+          className="services-bubble"
+          viewBox="0 0 831 612"
+        >
+          <linearGradient
+            gradientTransform="matrix(1 0 0 -1 0 702)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__a"
+            x1={186}
+            x2={788.506}
+            y1={332.118}
+            y2={332.118}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <path
+            d="M187.6 391.4C201.9 272.5 315.7 183.1 423 156c22.9-5.7 91.5-22.1 170.7 5.2 85.1 29.3 184.4 109.6 194 227.6 5.5 67.7-16.7 172.1-82.8 199.2-87.2 35.7-159.8-100.4-300-77.6-81.9 13.3-111.3 68.6-157.7 49.1-50.2-21.2-66.9-107.4-59.6-168.1z"
+            fill="url(#prefix__a)"
+          />
+          <linearGradient
+            gradientTransform="matrix(1 0 0 -1 0 702)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__b"
+            x1={197.494}
+            x2={800}
+            y1={325.55}
+            y2={325.55}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <path
+            d="M199.1 397.9C213.4 279 327.2 189.6 434.5 162.5c22.9-5.7 91.5-22.1 170.7 5.2 85.1 29.3 184.4 109.6 194 227.6 5.5 67.7-16.7 172.1-82.8 199.2-87.2 35.7-159.8-100.4-300-77.6-81.9 13.4-111.3 68.7-157.8 49.2-50.1-21.2-66.8-107.4-59.5-168.2z"
+            fill="url(#prefix__b)"
+            opacity={0.39}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__c"
+            x1={979.617}
+            x2={1023.67}
+            y1={-638.811}
+            y2={-594.758}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={255.1}
+            cy={164.7}
+            fill="url(#prefix__c)"
+            opacity={0.39}
+            r={31.2}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__d"
+            x1={1203.277}
+            x2={1269.322}
+            y1={-698.562}
+            y2={-632.518}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={54.7}
+            cy={296.1}
+            fill="url(#prefix__d)"
+            opacity={0.39}
+            r={46.7}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__e"
+            x1={738.893}
+            x2={760.92}
+            y1={-573.638}
+            y2={-551.611}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={471.4}
+            cy={24.9}
+            fill="url(#prefix__e)"
+            opacity={0.39}
+            r={15.6}
+          />
+          <linearGradient
+            gradientTransform="scale(-1 1) rotate(45 -569.992 -1743.1)"
+            gradientUnits="userSpaceOnUse"
+            id="prefix__f"
+            x1={575.431}
+            x2={663.537}
+            y1={-322.449}
+            y2={-234.342}
+          >
+            <stop
+              offset={0}
+              stopColor="#daf8ff"
+            />
+            <stop
+              offset={0.999}
+              stopColor="#b3d4fc"
+            />
+          </linearGradient>
+          <circle
+            cx={764.6}
+            cy={133.7}
+            fill="url(#prefix__f)"
+            opacity={0.39}
+            r={62.3}
+          />
+        </svg>
+      </SvgComponent>
       <main
         className="page"
       >
@@ -271,16 +569,16 @@ exports[`Services view should render 5 skills 1`] = `
             text="Visiter les projets"
           >
             <Link
-              className="classic-btn"
+              className="classic-btn "
               to="/projets"
             >
               <LinkAnchor
-                className="classic-btn"
+                className="classic-btn "
                 href="/projets"
                 navigate={[Function]}
               >
                 <a
-                  className="classic-btn"
+                  className="classic-btn "
                   href="/projets"
                   onClick={[Function]}
                 >
@@ -422,10 +720,8 @@ exports[`Services view should render 5 skills 1`] = `
 
 exports[`Services view should render Services component correctly 1`] = `
 <Fragment>
-  <img
-    alt=""
+  <SvgComponent
     className="services-bubble"
-    src={[Function]}
   />
   <main
     className="page"

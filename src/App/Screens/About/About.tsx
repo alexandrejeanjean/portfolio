@@ -1,4 +1,5 @@
 import React from 'react'
+import BrainHead from '../../Assets/BrainHead'
 import ClassicButton from '../../Shared/Button/Button'
 import me from '../../Assets/me.png'
 import './about.scss'
@@ -6,23 +7,31 @@ import './about.scss'
 const About = () => {
   return (
     <>
+      <BrainHead className='about-bubble' />
       <main className='about-wrapper page'>
         <img
-          className='about-profile-picture'
+          className='desktop-about-profile-picture'
           src={me}
           alt='author'
           title='author'
         />
-
         <section className='about-presentation-wrapper'>
           <div className='about-presentation-text'>
             <h1>
               Faisons <span className='underlined'>connaissance.</span>
             </h1>
+
+            <img
+              className='mobile-about-profile-picture'
+              src={me}
+              alt='author'
+              title='author'
+            />
             <p>
               Je suis développeur web front-end, spécialisé sur
               <br /> l'univers React / React-Native.
             </p>
+
             <p>
               Depuis plus de 2 ans, je donne vie à des maquettes pour des
               applications web et mobiles écrites en javascript. <br />

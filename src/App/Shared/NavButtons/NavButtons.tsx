@@ -35,7 +35,11 @@ const NavButtons = ({ text, position, path, isMobile }: Props) => {
     return (
       <div className='mobile-nav-link-wrapper'>
         <Link className={mobileBtnClasses} to={getDestination()}>
-          <img src={getIcon()} className='mobile-nav-icon' />
+          <img
+            src={getIcon()}
+            className='mobile-nav-icon'
+            alt={`${text} icon`}
+          />
           <p className='mobile-nav-link-text'>{text}</p>
         </Link>
       </div>

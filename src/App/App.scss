@@ -115,6 +115,10 @@ img.contact,
   z-index: 4;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 }
 
 @keyframes appearNavDesktop {

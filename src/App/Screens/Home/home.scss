@@ -1,78 +1,86 @@
-@import '../../constants/colors.scss';
+@import "../../constants/colors.scss";
 
 .home-wrapper {
   margin-top: 2%;
-  .home-title-wrapper {
+  section {
+    height: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    position: relative;
-    top: 14vh;
-    left: 9vw;
-    margin: auto;
-    z-index: 10;
+    align-items: center;
 
-    .home-title-content {
-      .home-title {
-        margin-bottom: -0.5rem;
-        font-size: 7em !important;
-        color: $fourth;
-      }
-
-      .home-subtitle {
-        width: 30vw;
-        color: $tertiary;
-        line-height: 30px;
-      }
-    }
-  }
-
-  .home-bubble-wrapper {
-    .home-bubble,
-    .home-bubble-arm,
-    .home-bubble-round {
-      position: absolute;
-      z-index: 0;
-    }
-
-    .home-bubble {
-      width: 70%;
-      top: 0;
-      left: 34%;
-      right: 0;
-      margin: auto;
-      z-index: 1;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
     .home-title-wrapper {
-      top: 32vh;
-      left: 5vw;
+      padding-left: 5%;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
       .home-title-content {
         .home-title {
-          font-size: 3rem !important;
+          margin-bottom: -0.5rem;
+          font-size: 6em !important;
+          color: $fourth;
         }
+
         .home-subtitle {
-          width: 80vw;
-          font-size: 1.2rem;
-          line-height: 28px;
+          width: 100%;
+          color: $tertiary;
+          line-height: 30px;
         }
       }
     }
 
     .home-bubble-wrapper {
-      .home-bubble,
-      .home-bubble-arm,
-      .home-bubble-round {
-        position: absolute;
-        z-index: 0;
-      }
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .home-bubble {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    section {
+      height: 90%;
+      position: relative;
+
+      .home-title-wrapper {
+        width: 100%;
+
+        .home-title-content {
+          .home-title {
+            font-size: 3rem !important;
+          }
+          .home-subtitle {
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 28px;
+          }
+        }
+      }
+
+      .home-bubble-wrapper {
+        position: absolute;
+        top: -30%;
+        z-index: -1;
         width: 120%;
-        top: 5%;
-        left: -10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .home-bubble {
+          width: 100%;
+        }
       }
     }
   }

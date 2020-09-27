@@ -1,4 +1,4 @@
-@import '../../constants/colors.scss';
+@import "../../constants/colors.scss";
 
 .services-bubble {
   position: fixed;
@@ -16,7 +16,7 @@
     margin-bottom: 10px;
   }
   .services-subtitle {
-    line-height: 30px;
+    line-height: 25px;
     max-width: 45%;
   }
 

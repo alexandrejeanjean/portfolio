@@ -1,20 +1,22 @@
-import coffee0 from '../../Assets/coffee0.svg'
-import development0 from '../../Assets/development0.svg'
-import integration0 from '../../Assets/integration0.svg'
-import project0 from '../../Assets/project0.svg'
-import help0 from '../../Assets/help0.svg'
+import {
+  Coffee0,
+  Help0,
+  Integration0,
+  Development0,
+  Project0,
+} from "../../Assets/imgPath";
 
 interface Service {
-  legend: string[]
-  img: any
+  legend: string[];
+  img: any;
 }
 
 const ServicesDatas: Service[] = [
-  { legend: ['Découverte', 'du projet'], img: coffee0 },
-  { legend: ['Accompagnement', '& réflexion'], img: help0 },
-  { legend: ['Intégration', 'des maquettes'], img: integration0 },
-  { legend: ['Développement', 'front-end'], img: development0 },
-  { legend: ['Suivi de projet', '& SAV'], img: project0 },
-]
+  { legend: ["Découverte", "du projet"], img: Coffee0 },
+  { legend: ["Accompagnement", "& réflexion"], img: Help0 },
+  { legend: ["Intégration", "des maquettes"], img: Integration0 },
+  { legend: ["Développement", "front-end"], img: Development0 },
+  { legend: ["Suivi de projet", "& SAV"], img: Project0 },
+];
 
-export default ServicesDatas
+export default ServicesDatas;

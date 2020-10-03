@@ -1,31 +1,31 @@
-import React from 'react'
-import BrainHead from '../../Assets/BrainHead'
-import ClassicButton from '../../Shared/Button/Button'
-import me from '../../Assets/me.png'
-import './about.scss'
+import React from "react";
+import ClassicButton from "../../Shared/Button/Button";
+import { BrainH, Me } from "../../Assets/imgPath";
+import "./about.scss";
 
 const About = () => {
   return (
     <>
-      <BrainHead className='about-bubble' />
-      <main className='about-wrapper page'>
+      {/* <BrainHead className='about-bubble' /> */}
+      <img src={BrainH} className="about-bubble" alt="" />
+      <main className="about-wrapper page">
         <img
-          className='desktop-about-profile-picture'
-          src={me}
-          alt='author'
-          title='author'
+          className="desktop-about-profile-picture"
+          src={Me}
+          alt="author"
+          title="author"
         />
-        <section className='about-presentation-wrapper'>
-          <div className='about-presentation-text'>
+        <section className="about-presentation-wrapper">
+          <div className="about-presentation-text">
             <h1>
-              Faisons <span className='underlined'>connaissance.</span>
+              Faisons <span className="underlined">connaissance.</span>
             </h1>
 
             <img
-              className='mobile-about-profile-picture'
-              src={me}
-              alt='author'
-              title='author'
+              className="mobile-about-profile-picture"
+              src={Me}
+              alt="author"
+              title="author"
             />
             <p>
               Je suis développeur web front-end, spécialisé sur
@@ -45,14 +45,14 @@ const About = () => {
               comme War of Golf (v2), Home Assist, Dipongo (v2), Dentsply...
             </p>
             <ClassicButton
-              text='Découvrez mes compétences'
-              endpoint='/services'
+              text="Découvrez mes compétences"
+              endpoint="/services"
             />
           </div>
         </section>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,10 +1,5 @@
 @import '../../constants/colors.scss';
 
-$overlay-dipongo: '../../Assets/project-overlay-dipongo.svg';
-$overlay-wog: '../../Assets/project-overlay-wog.svg';
-$overlay-ha: '../../Assets/project-overlay-ha.svg';
-$overlay-fg: '../../Assets/project-overlay-fg.svg';
-
 .projects-bubble {
   position: fixed;
   bottom: -15%;
@@ -54,8 +49,13 @@ $overlay-fg: '../../Assets/project-overlay-fg.svg';
     .ha-bg {
       background-image: url('../../Assets/projects/homeassist2.png');
     }
+
     .fg-bg {
       background-image: url('../../Assets/projects/fillgood3.png');
+    }
+
+    .familytree-bg {
+      background-image: url('../../Assets/projects/familyTree0.png');
     }
 
     .project-card-wrapper {

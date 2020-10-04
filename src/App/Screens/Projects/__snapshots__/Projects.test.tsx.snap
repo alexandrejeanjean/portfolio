@@ -45,8 +45,12 @@ exports[`Projects component should render Projects component correctly 1`] = `
                 "picture": "dipongo",
                 "pictures": Array [
                   null,
+                  null,
+                  null,
                 ],
+                "projectUrl": "https://www.dipongo.net/",
                 "title": "Dipongo",
+                "type": "Professionel",
               },
             },
           }
@@ -95,7 +99,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
                 "description": Array [
                   "Home Assist est un application connectée Android qui permet de simplifier et de faciliter le quotidien des seniors vivant seuls et loin de leurs proches.",
                   "En collaboration avec le développeur back-end de chez Home Assist, j'ai réalisé au sein de l'agence sqal.io, l'intégration des maquettes. Dans un second temps le développement de l'application Android, ainsi qu'une application mobile à destination des proches.",
-                  "#Android #ReactNative #Redux #StyledComponent",
+                  "#Android #ReactNative #Redux #StyledComponent #Firebase",
                 ],
                 "development": "Development",
                 "endpoint": "/projets/home-assist",
@@ -104,8 +108,12 @@ exports[`Projects component should render Projects component correctly 1`] = `
                 "picture": "ha",
                 "pictures": Array [
                   null,
+                  null,
+                  null,
                 ],
+                "projectUrl": "http://www.home-assist.fr/",
                 "title": "Home Assist",
+                "type": "Professionel",
               },
             },
           }
@@ -154,7 +162,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
                 "description": Array [
                   "War of Golf est une application Android et Ios qui offre une experience nouvelle du golf. Affronter ses amis sur le terrain, créer sa communauté, ou apprendre à jouer au golf via l'Academy.",
                   "Au sein de l'agence sqal.io, il m'a été confié, la refonte intégrale et le développement de nouvelles fonctionnalités de la version 2.0.",
-                  "#Android #Ios #ReactNative #Redux #StyledComponent",
+                  "#Android #Ios #ReactNative #Redux #StyledComponent #WebSocket #GoogleAdmob #Firebase #OneSignal",
                 ],
                 "development": "Development",
                 "endpoint": "/projets/war-of-golf",
@@ -163,8 +171,12 @@ exports[`Projects component should render Projects component correctly 1`] = `
                 "picture": "wog",
                 "pictures": Array [
                   null,
+                  null,
+                  null,
                 ],
+                "projectUrl": "https://warofgolf.com/",
                 "title": "War of Golf",
+                "type": "Professionel",
               },
             },
           }
@@ -213,7 +225,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
                 "description": Array [
                   "L'application web FillGood, est une plateforme permettant la livraison de carburant aux particuliers et entreprises.",
                   "En charge de l'intégration et du développement de l'application web au sein de l'agence sqal.io. J'ai développé une interface entièrement responsive, avec 3 accès : administrateur, employé et client.",
-                  "#Web #ReactJS #Redux #StyledComponent",
+                  "#Web #ReactJS #Redux #StyledComponent #Responsive",
                 ],
                 "development": "Development",
                 "endpoint": "/projets/fillgood",
@@ -222,8 +234,12 @@ exports[`Projects component should render Projects component correctly 1`] = `
                 "picture": "fillgood",
                 "pictures": Array [
                   null,
+                  null,
+                  null,
                 ],
+                "projectUrl": "https://fill-good.fr/",
                 "title": "Fillgood",
+                "type": "Professionel",
               },
             },
           }
@@ -258,6 +274,71 @@ exports[`Projects component should render Projects component correctly 1`] = `
         />
         <div
           className="project-card-button"
+        />
+      </Link>
+      <Link
+        className="project-card-wrapper"
+        key="Family Tree"
+        to={
+          Object {
+            "pathname": "/projets/familytree",
+            "state": Object {
+              "project": Object {
+                "appType": "Application web",
+                "description": Array [
+                  "L'application web Family Tree, est une application responsive, créée dans un but de montée en compétences fullstack.",
+                  "L'utilisateur peut créer un compte, ajouter sa famille, les générations et les membres qui la compose.",
+                  "Pour réaliser cette application, j'ai imaginé le design, l'ai intégré, puis réalisé le développement de l'ensemble des composants, jusqu'aux tests unitaires.",
+                  "Je me suis chargé de créer une API REST en Node/Express, qui permet de servir le client.",
+                  "Je poursuis actuellement le développement, pour la partie client et server afin de présenter ce projet comme réalisation dans mon portfolio.",
+                  "#Web #Responsive #ReactJS #scss #bootstrap #Jest #Enzyme #API #NodeJS #Express #Sequelize",
+                ],
+                "development": "Development",
+                "endpoint": "/projets/familytree",
+                "id": 4,
+                "integration": "Integration",
+                "picture": "familyTree",
+                "pictures": Array [
+                  null,
+                  null,
+                ],
+                "projectUrl": "https://family-tree-app-app.herokuapp.com/",
+                "title": "Family Tree",
+                "type": "Personnel",
+              },
+            },
+          }
+        }
+      >
+        <div
+          className="project-card left familytree-bg"
+        />
+        <div
+          className="card-datas-wrapper title-left"
+        >
+          <h2
+            className="card-title"
+          >
+            Family Tree
+          </h2>
+          <ul
+            className="card-meta meta-left"
+          >
+            <li
+              className="card-meta-item"
+            >
+              Integration
+            </li>
+            <li>
+              Development
+            </li>
+          </ul>
+        </div>
+        <div
+          className="project-overlay"
+        />
+        <div
+          className="project-card-button left"
         />
       </Link>
     </section>

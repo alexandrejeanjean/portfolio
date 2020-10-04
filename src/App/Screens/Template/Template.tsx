@@ -4,7 +4,7 @@ import Header from '../../Shared/Header/Header'
 import Navigation from '../../Core/Navigation/Navigation'
 import MobileNavigation from '../../Core/MobileNavigation/MobileNavigation'
 import BrainHead from '../../Assets/BrainHead'
-
+import './template.scss'
 type Props = { children: React.ReactNode }
 
 const Template = ({ children }: Props) => {
@@ -20,7 +20,7 @@ const Template = ({ children }: Props) => {
 
   const setBackground = () => {
     if (['/services', '/a-propos', '/projets'].indexOf(path) > -1) {
-      return <BrainHead className='about-bubble' />
+      return <BrainHead className='bg-bubble' />
     }
     return null
   }

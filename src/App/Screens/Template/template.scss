@@ -1,0 +1,14 @@
+.bg-bubble {
+  position: fixed;
+  top: 10%;
+  right: -30%;
+  margin: auto;
+  width: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-bubble {
+    display: none;
+  }
+}

@@ -1,26 +1,38 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import AwesomeSlider from 'react-awesome-slider'
+import 'react-awesome-slider/dist/styles.css'
 import NextPrevButton from '../../../Shared/NextPrevBtn/NextPrevBtn'
 import ProjectsDatas from '../ProjectsDatas'
 import './projectsDetails.scss'
 
 type Props = {
   location: {
-    state: { project: { id: number; appType: string; description: string } }
+    state: {
+      project: {
+        id: number
+        appType: string
+        description: string
+      }
+    }
   }
 }
 
-const Pictures = (projectId: number) => {
-  return ProjectsDatas[projectId].pictures.map((pic) => {
-    return (
-      <img
-        key={pic}
-        src={`${pic}`}
-        className='project-details-picture'
-        alt={`projet` + ProjectsDatas[projectId].title}
-      />
-    )
-  })
+const Carousel = (projectId: number) => {
+  return (
+    <AwesomeSlider className='project-details-picture-wrapper' mobileTouch>
+      {ProjectsDatas[projectId].pictures.map((pic) => (
+        <div>
+          <img
+            key={pic}
+            src={`${pic}`}
+            className='project-details-picture'
+            alt={`projet` + ProjectsDatas[projectId].title}
+          />
+        </div>
+      ))}
+    </AwesomeSlider>
+  )
 }
 
 const ProjectDetails = ({ location }: Props) => {
@@ -42,13 +54,17 @@ const ProjectDetails = ({ location }: Props) => {
           <h2>{ProjectsDatas[activeProjectId].appType}</h2>
         </section>
         <section className='project-details-wrapper'>
-          <div className='project-details-picture-wrapper'>
-            {Pictures(activeProjectId)}
-          </div>
+          {Carousel(activeProjectId)}
           <div className='project-details-description'>
             {ProjectsDatas[activeProjectId].description.map((desc) => (
               <p key={desc}>{desc}</p>
             ))}
+            <a
+              href={ProjectsDatas[activeProjectId].projectUrl}
+              title='Visiter le site'
+            >
+              Visiter le site
+            </a>
           </div>
         </section>
         <section className='navigation-wrapper'>

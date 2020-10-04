@@ -1,13 +1,4 @@
-@import "../../constants/colors.scss";
-
-.about-bubble {
-  position: fixed;
-  top: 10%;
-  right: -30%;
-  margin: auto;
-  width: 100%;
-  z-index: -1;
-}
+@import '../../constants/colors.scss';
 
 .about-wrapper {
   padding-top: 2.5%;
@@ -61,10 +52,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about-bubble {
-    display: none;
-  }
-
   .about-wrapper {
     .desktop-about-profile-picture {
       display: none;

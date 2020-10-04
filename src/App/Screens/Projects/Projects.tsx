@@ -35,6 +35,7 @@ let cardStyle = (
     'wog-bg': picture === 'wog',
     'ha-bg': picture === 'ha',
     'fg-bg': picture === 'fillgood',
+    'familytree-bg': picture === 'familyTree',
   })
 }
 

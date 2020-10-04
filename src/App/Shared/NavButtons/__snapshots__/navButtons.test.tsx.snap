@@ -2,16 +2,22 @@
 
 exports[`NavButtons should render nav buttons correctly 1`] = `
 <div
-  className="desktop-nav-link-wrapper"
+  className="mobile-nav-link-wrapper"
 >
   <Link
-    className="nav-button-link bottom bottom-focused"
+    className="mobile-nav-link mobile-focused"
     to="/a-propos"
   >
-    Faisons connaissance
+    <img
+      alt="Faisons connaissance icon"
+      className="mobile-nav-icon"
+      src={[Function]}
+    />
+    <p
+      className="mobile-nav-link-text"
+    >
+      Faisons connaissance
+    </p>
   </Link>
-  <span
-    className="nav-decoration-line deco-bottom"
-  />
 </div>
 `;

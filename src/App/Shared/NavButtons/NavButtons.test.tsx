@@ -9,6 +9,7 @@ describe('NavButtons', () => {
         text='Faisons connaissance'
         position='bottom'
         path='/a-propos'
+        isMobile
       />
     )
     expect(navButton).toMatchSnapshot()

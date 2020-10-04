@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navigation component should render Navigation component correctly 1`] = `
+exports[`MobileNavigation component should render MobileNavigation component correctly 1`] = `
 <Fragment>
   <nav
-    className="desktop-navigation-wrapper"
+    className="mobile-navigation-wrapper"
   >
     <NavButtons
-      isMobile={false}
+      isMobile={true}
       path="/projets"
       position="left"
       text="Projets"
     />
     <NavButtons
-      isMobile={false}
+      isMobile={true}
       path="/projets"
       position="bottom"
       text="Faisons connaissance"
     />
     <NavButtons
-      isMobile={false}
+      isMobile={true}
       path="/projets"
       position="right"
       text="Compétences"

@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react'
 import NavButtons from '../../Shared/NavButtons/NavButtons'
-
 import './mobileNavigation.scss'
 
-const MobileNavigation = () => {
-  let [path, setNewPath] = useState('')
-  let location = useLocation()
+type TMobileNavigation = { path: string }
 
-  useEffect(() => {
-    if (location.pathname !== path) {
-      let newPath = location.pathname
-      setNewPath(newPath)
-    }
-  }, [location, path])
-
+const MobileNavigation = ({ path }: TMobileNavigation) => {
   return (
     <>
       <nav className='mobile-navigation-wrapper'>

@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
-
+import React from 'react'
 import NavButtons from '../../Shared/NavButtons/NavButtons'
 import './navigation.scss'
 
-const Navigation = () => {
-  let [path, setNewPath] = useState('')
-  let location = useLocation()
+type TNavigation = { path: string }
 
-  useEffect(() => {
-    if (location.pathname !== path) {
-      let newPath = location.pathname
-      setNewPath(newPath)
-    }
-  }, [location, path])
-
+const Navigation = ({ path }: TNavigation) => {
   return (
     <>
       <nav className='desktop-navigation-wrapper'>

@@ -5,13 +5,13 @@
   line-height: normal;
   overflow: visible;
   padding: 0;
-  -webkit-appearance: button; /* for input */
-  -webkit-user-select: none; /* for button */
+  -webkit-appearance: button;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   p {
     font-size: 1.2rem;
-    font-family: 'NeutraTextBook', 'Arial';
+    font-family: "NeutraTextBook", "Arial";
     color: #012e40;
 
     &:hover {

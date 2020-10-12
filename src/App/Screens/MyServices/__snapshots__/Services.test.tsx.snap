@@ -28,53 +28,106 @@ exports[`Services view should be possible to click button to access next page 1`
       <main
         className="page"
       >
-        <section
+        <div
           className="services-wrapper"
         >
-          <h1
-            className="services-title"
+          <section
+            className="services-presentation-wrapper"
           >
-            Mes compétences.
-          </h1>
-          <p
-            className="services-subtitle"
-          >
-            J'ai à coeur d'architecturer, et d'intégrer les différents composants d'une application avec soin.
-          </p>
-          <p
-            className="services-subtitle"
-          >
-            Je prends le temps de respecter les guidelines des UI/UX Designers.
-          </p>
-          <p
-            className="services-subtitle"
-          >
-            Délivrer une application maintenable, dev-friendly est mon objectif.
-          </p>
-          <ClassicButton
-            endpoint="/projets"
-            text="Visiter les projets"
-          >
-            <Link
-              className="classic-btn "
-              to="/projets"
+            <h1
+              className="services-title"
             >
-              <LinkAnchor
-                className="classic-btn "
-                href="/projets"
-                navigate={[Function]}
+              Mes compétences.
+            </h1>
+            <p
+              className="services-subtitle"
+            >
+              J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration.
+            </p>
+            <p
+              className="services-subtitle"
+            >
+              Ecrire du code "éco-friendly", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal.
+            </p>
+            <p
+              className="services-subtitle"
+            >
+              J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
+            </p>
+            <div>
+              <NextPrevButton
+                handleClick={[Function]}
+                text="Intro"
               >
-                <a
-                  className="classic-btn "
-                  href="/projets"
+                <button
+                  className="next-prev-btn"
                   onClick={[Function]}
                 >
-                  Visiter les projets
-                </a>
-              </LinkAnchor>
-            </Link>
-          </ClassicButton>
-          <div
+                  <p>
+                    Intro
+                  </p>
+                </button>
+              </NextPrevButton>
+               -
+               
+              <NextPrevButton
+                handleClick={[Function]}
+                text="Hard skills"
+              >
+                <button
+                  className="next-prev-btn"
+                  onClick={[Function]}
+                >
+                  <p>
+                    Hard skills
+                  </p>
+                </button>
+              </NextPrevButton>
+               
+              -
+               
+              <NextPrevButton
+                handleClick={[Function]}
+                text="Soft skills"
+              >
+                <button
+                  className="next-prev-btn"
+                  onClick={[Function]}
+                >
+                  <p>
+                    Soft skills
+                  </p>
+                </button>
+              </NextPrevButton>
+               
+            </div>
+            <div>
+              <ClassicButton
+                endpoint="/projets"
+                text="Visiter les projets"
+              >
+                <Link
+                  className="classic-btn "
+                  to="/projets"
+                >
+                  <LinkAnchor
+                    className="classic-btn "
+                    href="/projets"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="classic-btn "
+                      href="/projets"
+                      onClick={[Function]}
+                    >
+                      Visiter les projets
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </ClassicButton>
+            </div>
+          </section>
+          <section
             className="skills-wrapper"
           >
             <div
@@ -197,8 +250,8 @@ exports[`Services view should be possible to click button to access next page 1`
                 & SAV
               </p>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
     </Services>
   </Router>
@@ -415,34 +468,60 @@ exports[`Services view should render Services component correctly 1`] = `
   <main
     className="page"
   >
-    <section
+    <div
       className="services-wrapper"
     >
-      <h1
-        className="services-title"
+      <section
+        className="services-presentation-wrapper"
       >
-        Mes compétences.
-      </h1>
-      <p
-        className="services-subtitle"
-      >
-        J'ai à coeur d'architecturer, et d'intégrer les différents composants d'une application avec soin.
-      </p>
-      <p
-        className="services-subtitle"
-      >
-        Je prends le temps de respecter les guidelines des UI/UX Designers.
-      </p>
-      <p
-        className="services-subtitle"
-      >
-        Délivrer une application maintenable, dev-friendly est mon objectif.
-      </p>
-      <ClassicButton
-        endpoint="/projets"
-        text="Visiter les projets"
-      />
-      <div
+        <h1
+          className="services-title"
+        >
+          Mes compétences.
+        </h1>
+        <p
+          className="services-subtitle"
+        >
+          J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration.
+        </p>
+        <p
+          className="services-subtitle"
+        >
+          Ecrire du code "éco-friendly", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal.
+        </p>
+        <p
+          className="services-subtitle"
+        >
+          J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
+        </p>
+        <div>
+          <NextPrevButton
+            handleClick={[Function]}
+            text="Intro"
+          />
+           -
+           
+          <NextPrevButton
+            handleClick={[Function]}
+            text="Hard skills"
+          />
+           
+          -
+           
+          <NextPrevButton
+            handleClick={[Function]}
+            text="Soft skills"
+          />
+           
+        </div>
+        <div>
+          <ClassicButton
+            endpoint="/projets"
+            text="Visiter les projets"
+          />
+        </div>
+      </section>
+      <section
         className="skills-wrapper"
       >
         <div
@@ -565,8 +644,8 @@ exports[`Services view should render Services component correctly 1`] = `
             & SAV
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 </Fragment>
 `;

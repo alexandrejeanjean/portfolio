@@ -28,12 +28,13 @@ const About = () => {
           />
           <p>
             Je suis développeur web front-end, spécialisé sur
-            <br /> l'univers React / React-Native.
+            <br /> l'univers <b>React / React-Native</b>.
           </p>
 
           <p>
             Depuis plus de 2 ans, je donne vie à des maquettes pour des
-            applications web et mobiles écrites en javascript/typescript. <br />
+            <b> applications web et mobiles</b> écrites en
+            javascript/typescript. <br />
           </p>
           <p>
             Cet univers me passionne, et je mets toute mon énergie à améliorer

@@ -14,15 +14,17 @@ const Services = () => {
           <section className="services-presentation-wrapper">
             <h1 className="services-title">Mes compétences.</h1>
             {ServicePresentationDatas[page].datas.map((sentence) => (
-              <p className="services-subtitle">{sentence}</p>
+              <p className="services-subtitle" key={sentence}>
+                {sentence}
+              </p>
             ))}
             <div>
-              <NextPrevButton text="Intro" handleClick={() => setPage(0)} /> -{" "}
+              <NextPrevButton text="Intro" handleClick={() => setPage(0)} /> //{" "}
               <NextPrevButton
                 text="Hard skills"
                 handleClick={() => setPage(1)}
               />{" "}
-              -{" "}
+              //{" "}
               <NextPrevButton
                 text="Soft skills"
                 handleClick={() => setPage(2)}
@@ -35,7 +37,7 @@ const Services = () => {
 
           <section className="skills-wrapper">
             {ServicesDatas.map((item) => (
-              <div className="skill-wrapper" key={item.img}>
+              <div className="skill-wrapper" key={item.img + "_skill"}>
                 <div className="skill-cube">
                   <img src={item.img} alt="" title="" />
                 </div>

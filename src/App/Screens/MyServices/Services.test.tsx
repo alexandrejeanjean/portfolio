@@ -32,7 +32,7 @@ describe("Services view", () => {
         <Services />
       </Router>
     );
-    expect(component.find("div.skills-wrapper").children()).toHaveLength(
+    expect(component.find("section.skills-wrapper").children()).toHaveLength(
       ServicesDatas.length
     );
     expect(component).toMatchSnapshot();

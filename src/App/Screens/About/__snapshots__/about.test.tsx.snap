@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About view should render About component correctly 1`] = `
+<main
+  className="about-wrapper page"
+>
+  <picture
+    className="desktop-about-profile-picture-wrapper"
+  >
+    <img
+      alt="author"
+      className="desktop-about-profile-picture"
+      src={null}
+      title="author"
+    />
+  </picture>
+  <section
+    className="about-presentation-wrapper"
+  >
+    <div
+      className="about-presentation-text"
+    >
+      <h1>
+        Faisons 
+        <span
+          className="underlined"
+        >
+          connaissance.
+        </span>
+      </h1>
+      <img
+        alt="author"
+        className="mobile-about-profile-picture"
+        src={null}
+        title="author"
+      />
+      <p>
+        Je suis développeur web front-end, spécialisé sur
+        <br />
+         l'univers 
+        <b>
+          React / React-Native
+        </b>
+        .
+      </p>
+      <p>
+        Depuis plus de 2 ans, je donne vie à des maquettes pour des
+        <b>
+           applications web et mobiles
+        </b>
+         écrites en javascript/typescript. 
+        <br />
+      </p>
+      <p>
+        Cet univers me passionne, et je mets toute mon énergie à améliorer mes compétences au quotidien.
+      </p>
+      <p>
+        J'ai pris part à la création de différents back-office, très orientés métier. Mais aussi à la création d'applications mobiles, comme War of Golf (v2), Home Assist, Dipongo (v2)...
+      </p>
+      <ClassicButton
+        endpoint="/services"
+        text="Découvrez mes compétences"
+      />
+    </div>
+  </section>
+</main>
+`;

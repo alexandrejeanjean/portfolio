@@ -28,7 +28,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
         key="Dipongo"
         to={
           Object {
-            "pathname": "/projets/dipongo",
+            "pathname": "/projets/infos",
             "state": Object {
               "project": Object {
                 "appType": "Application Ios & Android",
@@ -92,7 +92,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
         key="Home Assist"
         to={
           Object {
-            "pathname": "/projets/home-assist",
+            "pathname": "/projets/infos",
             "state": Object {
               "project": Object {
                 "appType": "Application Android",
@@ -155,7 +155,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
         key="War of Golf"
         to={
           Object {
-            "pathname": "/projets/war-of-golf",
+            "pathname": "/projets/infos",
             "state": Object {
               "project": Object {
                 "appType": "Application Ios & Android",
@@ -218,7 +218,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
         key="Fillgood"
         to={
           Object {
-            "pathname": "/projets/fillgood",
+            "pathname": "/projets/infos",
             "state": Object {
               "project": Object {
                 "appType": "Application web",
@@ -281,7 +281,7 @@ exports[`Projects component should render Projects component correctly 1`] = `
         key="Family Tree"
         to={
           Object {
-            "pathname": "/projets/familytree",
+            "pathname": "/projets/infos",
             "state": Object {
               "project": Object {
                 "appType": "Application web",

@@ -28,6 +28,7 @@ const ServicePresentationDatas: Presentation[] = [
   {
     page: 0,
     datas: [
+      "Développeur frontend sensible au comportement de l'utilisateur, mes compétences s'étendent de l'étude à la réalisation de projets web et mobile.",
       "J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration.",
       'Ecrire du code "éco-friendly", afin de créer des applications maintenables à long terme est l\'un de mes objectifs principal.',
       "J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.",
@@ -36,15 +37,16 @@ const ServicePresentationDatas: Presentation[] = [
   {
     page: 1,
     datas: [
-      "Voici la stack technique avec laquelle j'ai pour habitude de travailler :",
-      "Html - Scss - Javascript / Typescript",
-      "React - React-Native - Redux - Redux-thunk",
-      "Jest - Enzyme - Cypress.io",
-      "Heroku - Android Studio - Xcode - Git - Gitflow - Jira - Trello",
-      "Je développe actuellement les compétences backend suivantes :",
-      "Node.js - Express - Sequelize - Chaï - Mocha - Swagger",
-      "Ainsi que des notions d'intégration continue :",
-      "Docker - Docker compose - Travis",
+      "Voici ce que l'on trouve dans ma boite à outils du quotidien :",
+      "- Html, css/scss, javascript/typescript",
+      "- React / React-native, Redux",
+      "- Jest, Enzyme, Cypress.io",
+      "- Github / Gitlab / Bitbucket, Jira / Trello, Docker, Travis, Circle.CI",
+      "- Suite adobe (Photoshop / Illustrator / Indesign)",
+      "- Wordpress",
+      "",
+      "Je dispose également de notions sur la partie backend :",
+      "- Node.js, Express, Sequelize, PostgreSql",
     ],
   },
   {

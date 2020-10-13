@@ -14,7 +14,7 @@ const Services = () => {
           <section className="services-presentation-wrapper">
             <h1 className="services-title">Mes compétences.</h1>
             {ServicePresentationDatas[page].datas.map((sentence) => (
-              <p className="services-subtitle" key={sentence}>
+              <p className="services-subtitle" key={sentence.substr(0, 5)}>
                 {sentence}
               </p>
             ))}

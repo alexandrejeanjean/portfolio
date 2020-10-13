@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage view should render ErrorPage component correctly 1`] = `
+<Fragment>
+  <main
+    className="home-wrapper page"
+  >
+    <section>
+      <div
+        className="home-title-wrapper"
+      >
+        <div
+          className="home-title-content"
+        >
+          <h1
+            className="home-title"
+          >
+            Erreur de calcul...
+          </h1>
+          <p
+            className="home-subtitle"
+          >
+            Nouvelle itinéraire juste en dessous
+            <Emoji
+              onlyEmojiClassName="make-emojis-large"
+              text="👇"
+            />
+          </p>
+          <ClassicButton
+            endpoint="/"
+            text="Reprendre la route"
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+</Fragment>
+`;

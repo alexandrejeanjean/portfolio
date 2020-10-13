@@ -41,19 +41,25 @@ exports[`Services view should be possible to click button to access next page 1`
             </h1>
             <p
               className="services-subtitle"
-              key="J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration."
+              key="Dével"
+            >
+              Développeur frontend sensible au comportement de l'utilisateur, mes compétences s'étendent de l'étude à la réalisation de projets web et mobile.
+            </p>
+            <p
+              className="services-subtitle"
+              key="J'ai "
             >
               J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration.
             </p>
             <p
               className="services-subtitle"
-              key="Ecrire du code \\"éco-friendly\\", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal."
+              key="Ecrir"
             >
               Ecrire du code "éco-friendly", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal.
             </p>
             <p
               className="services-subtitle"
-              key="J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui."
+              key="J'aim"
             >
               J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
             </p>
@@ -302,19 +308,25 @@ exports[`Services view should render 5 skills 1`] = `
             </h1>
             <p
               className="services-subtitle"
-              key="J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration."
+              key="Dével"
+            >
+              Développeur frontend sensible au comportement de l'utilisateur, mes compétences s'étendent de l'étude à la réalisation de projets web et mobile.
+            </p>
+            <p
+              className="services-subtitle"
+              key="J'ai "
             >
               J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration.
             </p>
             <p
               className="services-subtitle"
-              key="Ecrire du code \\"éco-friendly\\", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal."
+              key="Ecrir"
             >
               Ecrire du code "éco-friendly", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal.
             </p>
             <p
               className="services-subtitle"
-              key="J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui."
+              key="J'aim"
             >
               J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
             </p>
@@ -540,19 +552,25 @@ exports[`Services view should render Services component correctly 1`] = `
         </h1>
         <p
           className="services-subtitle"
-          key="J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration."
+          key="Dével"
+        >
+          Développeur frontend sensible au comportement de l'utilisateur, mes compétences s'étendent de l'étude à la réalisation de projets web et mobile.
+        </p>
+        <p
+          className="services-subtitle"
+          key="J'ai "
         >
           J'ai pour habitude de travailler en étroite collaboration avec l'UI/UX designer, afin de m'imprégner des guidelines et de les respecter durant la phase d'intégration.
         </p>
         <p
           className="services-subtitle"
-          key="Ecrire du code \\"éco-friendly\\", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal."
+          key="Ecrir"
         >
           Ecrire du code "éco-friendly", afin de créer des applications maintenables à long terme est l'un de mes objectifs principal.
         </p>
         <p
           className="services-subtitle"
-          key="J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui."
+          key="J'aim"
         >
           J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
         </p>

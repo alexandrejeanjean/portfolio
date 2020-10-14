@@ -63,7 +63,9 @@ exports[`Services view should be possible to click button to access next page 1`
             >
               J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
             </p>
-            <div>
+            <div
+              className="skills-nav-wrapper"
+            >
               <NextPrevButton
                 handleClick={[Function]}
                 text="Intro"
@@ -330,7 +332,9 @@ exports[`Services view should render 5 skills 1`] = `
             >
               J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
             </p>
-            <div>
+            <div
+              className="skills-nav-wrapper"
+            >
               <NextPrevButton
                 handleClick={[Function]}
                 text="Intro"
@@ -574,7 +578,9 @@ exports[`Services view should render Services component correctly 1`] = `
         >
           J'aime partager, échanger autour des bonnes pratiques, et apprendre d'autrui.
         </p>
-        <div>
+        <div
+          className="skills-nav-wrapper"
+        >
           <NextPrevButton
             handleClick={[Function]}
             text="Intro"

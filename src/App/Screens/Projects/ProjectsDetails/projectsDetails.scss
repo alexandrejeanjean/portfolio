@@ -1,21 +1,21 @@
-@import '../../../constants/colors.scss';
+@import "../../../constants/colors.scss";
 
 .projects-details {
   .projects-details-title-wrapper {
-    min-height: 100px;
+    min-height: 10em;
     margin-top: 5%;
     h1 {
-      font-size: 3rem;
+      font-size: 3em;
       margin-bottom: 0;
     }
     h2 {
-      font-size: 1.2rem;
-      font-family: 'NeutraTextBook', 'Arial';
+      font-size: 1.2em;
+      font-family: "NeutraTextBook", "Arial";
       color: $main;
     }
     .back-btn-wrapper {
-      min-height: 40px;
-      margin-bottom: -30px;
+      min-height: 4em;
+      margin-bottom: -3em;
     }
   }
 
@@ -26,12 +26,12 @@
     flex-wrap: wrap;
     .project-details-picture-wrapper {
       width: 40vw;
-      max-height: 400px;
+      max-height: 40em;
       overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 5px;
+      border-radius: 0.5em;
       .project-details-picture {
         width: 100%;
         height: 100%;
@@ -41,34 +41,35 @@
       width: 40vw;
 
       p {
-        line-height: 30px;
+        line-height: 1.4em;
       }
     }
   }
 
   .navigation-wrapper {
     .vertical-divider {
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 1em;
+      margin-left: 1em;
     }
-    max-width: 240px;
+    max-width: 20em;
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 4em;
+    margin-bottom: 4em;
   }
 }
 
 @media screen and (max-width: 768px) {
   .projects-details {
     .projects-details-title-wrapper {
-      min-height: 100px;
+      min-height: 10em;
       margin-top: 15%;
+      margin-bottom: -1em;
       h1 {
-        font-size: 2rem;
+        font-size: 2.2em;
       }
       .back-btn-wrapper {
         display: block;
-        margin-bottom: -30px;
+        margin-bottom: -3em;
       }
     }
 

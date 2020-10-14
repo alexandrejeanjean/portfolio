@@ -18,7 +18,7 @@ const Services = () => {
                 {sentence}
               </p>
             ))}
-            <div>
+            <div className="skills-nav-wrapper">
               <NextPrevButton text="Intro" handleClick={() => setPage(0)} /> //{" "}
               <NextPrevButton
                 text="Hard skills"

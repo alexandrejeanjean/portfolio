@@ -1,4 +1,4 @@
-@import '../../constants/colors.scss';
+@import "../../constants/colors.scss";
 
 .desktop-nav-link-wrapper {
   .nav-button-link {
@@ -23,13 +23,13 @@
   }
 
   .focused.nav-button-link::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 100%;
-    background: url('../../Assets/underline.svg') no-repeat;
+    background: url("../../Assets/underline.svg") no-repeat;
     position: absolute;
-    top: 0.2rem;
-    left: -0.5rem;
+    top: 0.2em;
+    left: -0.5em;
     z-index: -1;
     display: inline-block;
     animation-name: underlineAnimate;
@@ -38,13 +38,13 @@
   }
 
   .left {
-    left: 2vw;
+    left: 0vw;
     top: 50vh;
     transform: rotate(-90deg);
   }
 
   .right {
-    right: 0.8vw;
+    right: -2vw;
     top: 50vh;
     transform: rotate(-90deg);
   }
@@ -56,10 +56,10 @@
   }
 
   .bottom-focused.nav-button-link::after {
-    content: '';
+    content: "";
     width: 140%;
     height: 0%;
-    background: url('../../Assets/underline.svg') no-repeat;
+    background: url("../../Assets/underline.svg") no-repeat;
     position: absolute;
     left: 46%;
     top: 10%;
@@ -72,8 +72,8 @@
   .nav-decoration-line {
     position: absolute;
     display: block;
-    width: 2px;
-    height: 25px;
+    width: 0.1em;
+    height: 1.2em;
     background: linear-gradient(259.07deg, #daf8ff 4.07%, #b2eaf8 100%);
   }
 
@@ -116,13 +116,13 @@
       justify-content: center;
 
       .mobile-nav-icon {
-        width: 40px;
-        margin-bottom: -10px;
-        margin-top: 10px;
+        width: 2em;
+        margin-bottom: -0.4em;
+        margin-top: 1em;
       }
 
       .mobile-nav-link-text {
-        font-size: 0.7rem;
+        font-size: 0.6em;
         text-align: center;
       }
     }
@@ -130,6 +130,6 @@
   .mobile-focused {
     font-weight: bold;
     background-color: rgba(158, 158, 158, 0.1);
-    border-radius: 25px;
+    border-radius: 0.8em;
   }
 }

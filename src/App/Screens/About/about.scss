@@ -8,19 +8,19 @@
   .desktop-about-profile-picture-wrapper {
     width: 35vw;
     max-height: 65vh;
-    padding-top: 40px;
+    padding-top: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
     .desktop-about-profile-picture {
-      min-width: 250px;
+      min-width: 15em;
       max-width: 20%;
-      border-radius: 10px;
+      border-radius: 0.8em;
       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       filter: opacity(0.6);
       &:hover {
         filter: opacity(1);
-        transform: translateY(2px);
+        transform: translateY(-0.5em);
       }
     }
   }
@@ -41,7 +41,7 @@
     .about-presentation-text {
       h1 {
         font-size: 4rem;
-        margin-bottom: 10px;
+        margin-bottom: 0.1em;
         .underlined {
           font: inherit;
           color: inherit;
@@ -49,7 +49,7 @@
         }
       }
       p {
-        line-height: 25px;
+        line-height: 1.4em;
       }
     }
   }
@@ -57,30 +57,29 @@
 
 @media screen and (max-width: 768px) {
   .about-wrapper {
-    .desktop-about-profile-picture {
+    .desktop-about-profile-picture-wrapper {
       display: none;
     }
     .mobile-about-profile-picture {
       display: unset;
       float: left;
-      width: 100px;
-      margin-right: 10px;
-      border-radius: 10px;
+      width: 8em;
+      margin-right: 1em;
+      border-radius: 1em;
       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       filter: opacity(0.6);
       &:hover {
         filter: opacity(1);
-        transform: translateY(2px);
       }
     }
     .about-presentation-wrapper {
       width: 100vw;
       height: 120%;
       .about-presentation-text {
-        max-width: 500px;
+        max-width: 100%;
         h1 {
-          font-size: 3rem;
-          margin-bottom: 10px;
+          font-size: 2.2em;
+          margin-bottom: 0.2em;
         }
       }
     }

@@ -117,12 +117,12 @@
 
       .mobile-nav-icon {
         width: 2em;
-        margin-bottom: -0.4em;
+        margin-bottom: -0.5em;
         margin-top: 1em;
       }
 
       .mobile-nav-link-text {
-        font-size: 0.6em;
+        font-size: 0.7em;
         text-align: center;
       }
     }
@@ -130,6 +130,6 @@
   .mobile-focused {
     font-weight: bold;
     background-color: rgba(158, 158, 158, 0.1);
-    border-radius: 0.8em;
+    border-radius: 2em;
   }
 }

@@ -62,7 +62,7 @@ const Projects = () => {
               className='project-card-wrapper'
               key={item.title}
               to={{
-                pathname: item.endpoint,
+                pathname: '/projets/infos',
                 state: {
                   project: item,
                 },

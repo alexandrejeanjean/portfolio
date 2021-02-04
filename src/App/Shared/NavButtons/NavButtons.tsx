@@ -13,14 +13,15 @@ type Props = {
 
 const NavButtons = ({ text, position, path, isMobile }: Props) => {
   const getDestination = () => {
-    if (text === "Faisons connaissance") return "/a-propos";
+    if (text === "Faisons connaissance" || text === "A propos")
+      return "/a-propos";
     if (text === "Projets") return "/projets";
     if (text === "Compétences") return "/services";
     return "/";
   };
 
   const getIcon = () => {
-    if (text === "Faisons connaissance") return Coffee0;
+    if (text === "Faisons connaissance" || text === "A propos") return Coffee0;
     if (text === "Projets") return Development0;
     if (text === "Compétences") return Help0;
     return;

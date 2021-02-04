@@ -15,7 +15,7 @@ exports[`MobileNavigation component should render MobileNavigation component cor
       isMobile={true}
       path="/projets"
       position="bottom"
-      text="Faisons connaissance"
+      text="A propos"
     />
     <NavButtons
       isMobile={true}

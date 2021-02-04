@@ -1,52 +1,52 @@
-import React from 'react'
-import { Route, withRouter } from 'react-router-dom'
-import { AnimatedSwitch } from './AnimatedSwitch'
+import React from "react";
+import { Route, withRouter } from "react-router-dom";
+import { AnimatedSwitch } from "./AnimatedSwitch";
 
-const Home = React.lazy(() => import('./../Screens/Home/Home'))
-const About = React.lazy(() => import('../Screens/About/About'))
-const Projects = React.lazy(() => import('../Screens/Projects/Projects'))
-const Services = React.lazy(() => import('../Screens/MyServices/Services'))
+const Home = React.lazy(() => import("./../Screens/Home/Home"));
+const About = React.lazy(() => import("../Screens/About/About"));
+const Projects = React.lazy(() => import("../Screens/Projects/Projects"));
+const Services = React.lazy(() => import("../Screens/MyServices/Services"));
 const ProjectsDetails = React.lazy(
-  () => import('../Screens/Projects/ProjectsDetails/ProjectsDetails')
-)
+  () => import("../Screens/Projects/ProjectsDetails/ProjectsDetails")
+);
 
-const ErrorPage = React.lazy(() => import('./../Screens/ErrorPage/ErrorPage'))
+const ErrorPage = React.lazy(() => import("./../Screens/ErrorPage/ErrorPage"));
 
 const routes = [
   {
     component: Home,
-    path: '/',
+    path: "/",
     exact: true,
   },
   {
     component: About,
-    path: '/a-propos',
+    path: "/a-propos",
     exact: true,
   },
   {
     component: Projects,
-    path: '/projets',
+    path: "/projets",
     exact: true,
   },
   {
     component: ProjectsDetails,
-    path: '/projets/:id',
+    path: "/projets/infos",
     exact: false,
   },
   {
     component: Services,
-    path: '/services',
+    path: "/services",
     exact: true,
   },
   {
     component: ErrorPage,
-    path: '',
+    path: "",
   },
-]
+];
 
 type Props = {
-  location: any
-}
+  location: any;
+};
 
 const Routes = withRouter(({ location }: Props) => {
   return (
@@ -59,10 +59,10 @@ const Routes = withRouter(({ location }: Props) => {
             path={route.path}
             component={route.component}
           />
-        )
+        );
       })}
     </AnimatedSwitch>
-  )
-})
+  );
+});
 
-export default Routes
+export default Routes;

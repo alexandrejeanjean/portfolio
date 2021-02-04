@@ -45,9 +45,17 @@ exports[`Home view should be possible to click button to access next page 1`] = 
               <p
                 className="home-subtitle"
               >
-                Bonjour, je m'appelle Alexandre. 
+                Bonjour, je m'appelle 
+                <b>
+                  Alexandre.
+                </b>
+                 
                 <br />
-                 Depuis plus de 2 ans, j'agite de la matière grise pour donner vie à de nouvelles applications web & mobile innovantes.
+                 Depuis plus de 2 ans, j'agite de la matière grise pour donner vie à de nouvelles
+                <b>
+                   applications web & mobile
+                </b>
+                 innovantes.
               </p>
               <ClassicButton
                 endpoint="/a-propos"
@@ -406,9 +414,17 @@ exports[`Home view should render home component correctly 1`] = `
           <p
             className="home-subtitle"
           >
-            Bonjour, je m'appelle Alexandre. 
+            Bonjour, je m'appelle 
+            <b>
+              Alexandre.
+            </b>
+             
             <br />
-             Depuis plus de 2 ans, j'agite de la matière grise pour donner vie à de nouvelles applications web & mobile innovantes.
+             Depuis plus de 2 ans, j'agite de la matière grise pour donner vie à de nouvelles
+            <b>
+               applications web & mobile
+            </b>
+             innovantes.
           </p>
           <ClassicButton
             endpoint="/a-propos"

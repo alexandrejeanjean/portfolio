@@ -6,17 +6,17 @@
   align-items: center;
   background-color: #fff;
   text-transform: uppercase;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   z-index: 10;
   .author-name {
-    font-family: 'NeutraTextBook', 'Arial';
+    font-family: "NeutraTextBook", "Arial";
     font-size: 0.6em;
     margin-left: 5vw;
   }
 
   .contact {
-    width: 40px;
+    width: 1.8em;
     margin-right: 5vw;
   }
 }
@@ -24,12 +24,12 @@
 @media screen and (max-width: 768px) {
   .header {
     width: 100vw;
-    height: 20px;
+    height: 1.2em;
     .author-name {
       margin-left: 8vw;
     }
     .contact {
-      width: 30px;
+      width: 1.4em;
       margin-right: 8vw;
     }
   }

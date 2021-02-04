@@ -1,24 +1,19 @@
-import React from 'react'
-import NavButtons from '../../Shared/NavButtons/NavButtons'
-import './mobileNavigation.scss'
+import React from "react";
+import NavButtons from "../../Shared/NavButtons/NavButtons";
+import "./mobileNavigation.scss";
 
-type TMobileNavigation = { path: string }
+type TMobileNavigation = { path: string };
 
 const MobileNavigation = ({ path }: TMobileNavigation) => {
   return (
     <>
-      <nav className='mobile-navigation-wrapper'>
-        <NavButtons text='Projets' position='left' path={path} isMobile />
-        <NavButtons
-          text='Faisons connaissance'
-          position='bottom'
-          path={path}
-          isMobile
-        />
-        <NavButtons text='Compétences' position='right' path={path} isMobile />
+      <nav className="mobile-navigation-wrapper">
+        <NavButtons text="Projets" position="left" path={path} isMobile />
+        <NavButtons text="A propos" position="bottom" path={path} isMobile />
+        <NavButtons text="Compétences" position="right" path={path} isMobile />
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default MobileNavigation
+export default MobileNavigation;

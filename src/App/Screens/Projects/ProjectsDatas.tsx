@@ -108,7 +108,7 @@ const ProjectsDatas: Project[] = [
     type: 'Professionel',
     title: 'Fillgood',
     picture: 'fillgood',
-    appType: 'Application web',
+    appType: 'Application web responsive',
     integration: 'Integration',
     development: 'Development',
     description: [

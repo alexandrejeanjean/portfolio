@@ -1,35 +1,35 @@
-@import './constants/colors.scss';
+@import "./constants/colors.scss";
 
 @font-face {
-  font-family: 'FauneTextBold';
-  src: local('FauneTextBold'),
-    url(./Assets/Fonts/Faune-Text_Bold.ttf) format('truetype');
+  font-family: "FauneTextBold";
+  src: local("FauneTextBold"),
+    url(./Assets/Fonts/Faune-Text_Bold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'NeutraTextBold';
-  src: local('NeutraTextBold'),
-    url(./Assets/Fonts/NeutraText-Bold.otf) format('truetype');
+  font-family: "NeutraTextBold";
+  src: local("NeutraTextBold"),
+    url(./Assets/Fonts/NeutraText-Bold.otf) format("truetype");
 }
 
 @font-face {
-  font-family: 'NeutraTextBook';
-  src: local('NeutraTextBook'),
-    url(./Assets/Fonts/NeutraText-Book.otf) format('truetype');
+  font-family: "NeutraTextBook";
+  src: local("NeutraTextBook"),
+    url(./Assets/Fonts/NeutraText-Book.otf) format("truetype");
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'NeutraTextBold', 'Arial';
+  font-family: "NeutraTextBold", "Arial";
   color: $fourth;
 }
 
 p,
 span,
 a {
-  font-family: 'NeutraTextBook', 'Arial';
+  font-family: "NeutraTextBook", "Arial";
   font-size: 1.2rem;
 }
 
@@ -104,7 +104,7 @@ img.contact,
 }
 
 .page {
-  padding-top: 2vh;
+  padding-top: 3.5vh;
   width: 85vw;
   height: 85vh;
   overflow-y: auto;

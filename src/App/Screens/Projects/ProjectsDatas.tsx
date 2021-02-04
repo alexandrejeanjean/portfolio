@@ -13,6 +13,9 @@ import {
   fillgood3,
   familyTree,
   familyTree2,
+  wineabroad1,
+  wineabroad2,
+  wineabroad3,
 } from '../../Assets/imgPath'
 
 interface Project {
@@ -32,6 +35,24 @@ interface Project {
 const ProjectsDatas: Project[] = [
   {
     id: 0,
+    type: 'Personnel',
+    title: 'WineAbroad',
+    picture: 'wineabroad1',
+    appType: 'Application web responsive',
+    integration: 'Integration',
+    development: 'Development',
+    description: [
+      'WineAbroad est une Single Page Application (SPA) présentant la société et ses services.',
+      "WineAbroad est une société spécialisée dans l'export de vins à l'international.",
+      "Développée avec Gatsby, pour aider au lancement de l'activité d'un ami, j'ai créé, intégré et développé le projet jusqu'à sa mise en production.",
+      '#Gatsby #React #StyledComponent',
+    ],
+    endpoint: '/projets/wineabroad',
+    pictures: [wineabroad1, wineabroad2, wineabroad3],
+    projectUrl: 'https://www.wineabroad.fr/',
+  },
+  {
+    id: 1,
     type: 'Professionel',
     title: 'Dipongo',
     picture: 'dipongo',
@@ -49,7 +70,7 @@ const ProjectsDatas: Project[] = [
     projectUrl: 'https://www.dipongo.net/',
   },
   {
-    id: 1,
+    id: 2,
     type: 'Professionel',
     title: 'Home Assist',
     picture: 'ha',
@@ -66,7 +87,7 @@ const ProjectsDatas: Project[] = [
     projectUrl: 'http://www.home-assist.fr/',
   },
   {
-    id: 2,
+    id: 3,
     type: 'Professionel',
     title: 'War of Golf',
     picture: 'wog',
@@ -83,7 +104,7 @@ const ProjectsDatas: Project[] = [
     projectUrl: 'https://warofgolf.com/',
   },
   {
-    id: 3,
+    id: 4,
     type: 'Professionel',
     title: 'Fillgood',
     picture: 'fillgood',
@@ -100,7 +121,7 @@ const ProjectsDatas: Project[] = [
     projectUrl: 'https://fill-good.fr/',
   },
   {
-    id: 4,
+    id: 5,
     type: 'Personnel',
     title: 'Family Tree',
     picture: 'familyTree',

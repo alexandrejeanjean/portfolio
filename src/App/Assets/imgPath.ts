@@ -22,6 +22,9 @@ const fillgood2 = require('./projects/fillgood2.png')
 const fillgood3 = require('./projects/fillgood3.png')
 const familyTree = require('./projects/familyTree.png')
 const familyTree2 = require('./projects/familyTree2.png')
+const wineabroad1 = require('./projects/wineabroad1.png')
+const wineabroad2 = require('./projects/wineabroad2.png')
+const wineabroad3 = require('./projects/wineabroad3.png')
 
 export {
   Coffee0,
@@ -47,4 +50,7 @@ export {
   fillgood3,
   familyTree,
   familyTree2,
+  wineabroad1,
+  wineabroad2,
+  wineabroad3
 }

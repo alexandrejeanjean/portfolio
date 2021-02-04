@@ -31,6 +31,7 @@ let cardStyle = (
     'project-card': true,
     left: i % 2 === 0,
     right: i % 2 === 1,
+    'wineabroad-bg': picture === 'wineabroad1',
     'dipongo-bg': picture === 'dipongo',
     'wog-bg': picture === 'wog',
     'ha-bg': picture === 'ha',
